@@ -284,6 +284,8 @@ function h(s) {
 function renderCropCard(e) {
   const shortSource = e.source_image_id.replace('training_ADE_train_', '');
   const bal = e.balance.map(b => Math.round(b * 100));
+  const cropNum = e.crop_name.match(/crop(\d+)$/);
+  const cropLabel = cropNum ? `crop ${cropNum[1]}` : '';
   return `
     <div class="crop-card" data-crop-name="${h(e.crop_name)}">
       <div class="card-source">
@@ -291,7 +293,7 @@ function renderCropCard(e) {
              data-lightbox="${h(e.source_thumb)}" data-caption="Source: ${h(e.source_image_id)}">
         <div>
           <div class="source-id">ADE ${h(shortSource)}</div>
-          <div>${h(e.source_transition.split('_').pop())}</div>
+          <div>${h(e.source_transition.split('_').pop())} &middot; ${h(cropLabel)}</div>
         </div>
       </div>
       <div class="card-overlay-row">
@@ -333,13 +335,15 @@ function renderCropCard(e) {
 function renderRefinedCard(e) {
   const shortSource = e.source_image_id.replace('training_ADE_train_', '');
   const bal = e.balance.map(b => Math.round(b * 100));
+  const cropNum = e.crop_name.match(/crop(\d+)$/);
+  const cropLabel = cropNum ? `crop ${cropNum[1]}` : '';
   return `
     <div class="crop-card" data-crop-name="${h(e.crop_name)}">
       <div class="card-source">
         <img src="${h(e.source_thumb)}" alt="source" loading="lazy"
              data-lightbox="${h(e.source_thumb)}" data-caption="Source: ${h(e.source_image_id)}">
         <div>
-          <div class="source-id">ADE ${h(shortSource)}</div>
+          <div class="source-id">ADE ${h(shortSource)} &middot; ${h(cropLabel)}</div>
           <div>${e.crop_width}&times;${e.crop_height} &rarr; ${e.refined_width}&times;${e.refined_height} (${e.scale_factor}&times;)</div>
         </div>
       </div>
