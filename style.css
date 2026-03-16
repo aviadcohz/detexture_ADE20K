@@ -506,6 +506,124 @@ select.sort-select {
 }
 .site-footer a { color: var(--accent); }
 
+/* ── Expandable Detail Panel ── */
+.crop-card {
+  cursor: pointer;
+}
+.crop-card [data-lightbox] {
+  cursor: zoom-in;
+}
+
+.crop-card.expanded {
+  grid-column: 1 / -1;
+}
+
+.card-detail {
+  border-top: 1px solid var(--line);
+  padding: 16px;
+  animation: slideDown .25s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to { opacity: 1; max-height: 800px; }
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.detail-section-title {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+/* Bbox overlay on source image */
+.bbox-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.bbox-container img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+.bbox-rect {
+  position: absolute;
+  border: 2.5px solid var(--red-a);
+  border-radius: 2px;
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.3);
+}
+
+/* Detail masks row */
+.detail-masks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.detail-masks-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.detail-masks-col .col-label {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 700;
+  color: var(--muted);
+  text-align: center;
+}
+.detail-masks-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+}
+.detail-masks-row img {
+  width: 100%;
+  border-radius: 4px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.detail-masks-row .img-label {
+  text-align: center;
+  font-size: .65rem;
+  color: var(--muted);
+}
+
+/* Detail metadata */
+.detail-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: .82rem;
+  color: var(--muted);
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+.detail-meta strong { color: var(--ink); }
+
+/* Expand indicator */
+.expand-indicator {
+  text-align: center;
+  padding: 4px;
+  font-size: .72rem;
+  color: var(--muted);
+  letter-spacing: .04em;
+  transition: color .15s;
+}
+.crop-card:hover .expand-indicator { color: var(--accent); }
+.crop-card.expanded .expand-indicator { display: none; }
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .hero h1 { font-size: 2rem; }

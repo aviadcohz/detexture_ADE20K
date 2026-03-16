@@ -133,7 +133,40 @@ def main():
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops) * 2} refined masks")
 
-    # Step 6: Generate gallery.json
+    # Step 6: Copy overlays (per transition, deduplicated)
+    print("\nCopying overlays...")
+    overlays_dir = ASSETS / "overlays"
+    overlays_dir.mkdir(parents=True, exist_ok=True)
+    overlay_sizes = {}  # transition_name -> (w, h)
+    seen_transitions = set()
+    for crop in crops:
+        trans = crop.get("source_transition", "")
+        if trans and trans not in seen_transitions:
+            seen_transitions.add(trans)
+            src = DATASET / "overlays" / f"{trans}.jpg"
+            dst = overlays_dir / f"{trans}.jpg"
+            if src.exists() and not dst.exists():
+                shutil.copy2(src, dst)
+            if src.exists():
+                img = Image.open(src)
+                overlay_sizes[trans] = img.size  # (w, h)
+    print(f"  Done: {len(seen_transitions)} overlays")
+
+    # Step 7: Copy crop visualizations
+    print("\nCopying crop visualizations...")
+    crop_viz_dir = ASSETS / "crop_viz"
+    crop_viz_dir.mkdir(parents=True, exist_ok=True)
+    for i, crop in enumerate(crops):
+        crop_name = crop["crop_name"]
+        src = DATASET / "crops" / "visualizations" / f"{crop_name}.jpg"
+        dst = crop_viz_dir / f"{crop_name}.jpg"
+        if src.exists() and not dst.exists():
+            shutil.copy2(src, dst)
+        if (i + 1) % 200 == 0:
+            print(f"  {i + 1}/{len(crops)}")
+    print(f"  Done: {len(crops)} crop visualizations")
+
+    # Generate gallery.json
     print("\nGenerating gallery.json...")
     gallery_entries = []
     for crop in crops:
@@ -144,10 +177,14 @@ def main():
         h = coords[2] - coords[0] if len(coords) == 4 else 0
         refined_size = crop.get("refined_size", [0, 0])
 
+        source_transition = crop.get("source_transition", "")
+        source_box = crop.get("source_box", [0, 0, 0, 0])
+        ov_size = overlay_sizes.get(source_transition, (256, 256))
+
         entry = {
             "crop_name": crop_name,
             "source_image_id": source_id,
-            "source_transition": crop.get("source_transition", ""),
+            "source_transition": source_transition,
             "texture_a": crop.get("texture_a", ""),
             "texture_b": crop.get("texture_b", ""),
             "crop_width": w,
@@ -157,6 +194,9 @@ def main():
             "scale_factor": crop.get("scale_factor", 1),
             "balance": crop.get("balance", [0, 0]),
             "crop_score": crop.get("crop_score", 0),
+            "source_box": source_box,
+            "overlay_w": ov_size[0],
+            "overlay_h": ov_size[1],
             # Relative paths for the site
             "source_thumb": f"assets/sources/{source_id}.jpg",
             "crop_image": f"assets/crops/{Path(crop['image_path']).name}",
@@ -165,6 +205,8 @@ def main():
             "refined_image": f"assets/refined/{Path(crop['refined_image_path']).stem}.jpg",
             "refined_mask_a": f"assets/refined_masks/{Path(crop['refined_mask_a_path']).name}",
             "refined_mask_b": f"assets/refined_masks/{Path(crop['refined_mask_b_path']).name}",
+            "overlay": f"assets/overlays/{source_transition}.jpg",
+            "crop_viz": f"assets/crop_viz/{crop_name}.jpg",
         }
         gallery_entries.append(entry)
 

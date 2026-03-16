@@ -1,4 +1,4 @@
-/* ── Architexture Gallery App ── */
+/* ── ADE20k Textures Crops Gallery App ── */
 
 let galleryData = null;
 let filteredEntries = [];
@@ -7,11 +7,19 @@ let currentMode = 'crops'; // 'crops' or 'refined'
 let groupBySource = false;
 const PER_PAGE = 48;
 
+// Index entries by crop_name for quick lookup
+let entryIndex = {};
+
 // ── Data Loading ──
 async function loadGallery() {
   if (galleryData) return galleryData;
   const resp = await fetch('gallery.json');
   galleryData = await resp.json();
+  // Build index
+  entryIndex = {};
+  for (const e of galleryData.entries) {
+    entryIndex[e.crop_name] = e;
+  }
   return galleryData;
 }
 
@@ -42,18 +50,134 @@ async function initGallery(mode) {
     applyFilters();
   });
 
-  // Event delegation for lightbox clicks
+  // Event delegation for gallery grid
   document.getElementById('gallery-grid').addEventListener('click', handleGalleryClick);
 
   applyFilters();
 }
 
-// ── Event Delegation for Lightbox ──
+// ── Event Delegation ──
 function handleGalleryClick(e) {
-  const img = e.target.closest('[data-lightbox]');
-  if (img) {
-    openLightbox(img.getAttribute('data-lightbox'), img.getAttribute('data-caption') || '');
+  // Lightbox clicks (on images with data-lightbox)
+  const lbTarget = e.target.closest('[data-lightbox]');
+  if (lbTarget) {
+    e.stopPropagation();
+    openLightbox(lbTarget.getAttribute('data-lightbox'), lbTarget.getAttribute('data-caption') || '');
+    return;
   }
+
+  // Card expand/collapse clicks
+  const card = e.target.closest('.crop-card');
+  if (card && card.dataset.cropName) {
+    toggleDetail(card);
+  }
+}
+
+// ── Expand/Collapse Detail ──
+function toggleDetail(card) {
+  const cropName = card.dataset.cropName;
+  const existing = card.querySelector('.card-detail');
+
+  if (existing) {
+    // Collapse
+    existing.remove();
+    card.classList.remove('expanded');
+    return;
+  }
+
+  // Collapse any other expanded card
+  const grid = document.getElementById('gallery-grid');
+  const prevExpanded = grid.querySelector('.crop-card.expanded');
+  if (prevExpanded) {
+    const prevDetail = prevExpanded.querySelector('.card-detail');
+    if (prevDetail) prevDetail.remove();
+    prevExpanded.classList.remove('expanded');
+  }
+
+  // Expand this card
+  const entry = entryIndex[cropName];
+  if (!entry) return;
+
+  card.classList.add('expanded');
+  const detail = document.createElement('div');
+  detail.className = 'card-detail';
+  detail.innerHTML = renderDetail(entry);
+  card.appendChild(detail);
+}
+
+function renderDetail(e) {
+  const box = e.source_box || [0, 0, 0, 0];
+  const ow = e.overlay_w || 256;
+  const oh = e.overlay_h || 256;
+  // source_box is [x1, y1, x2, y2] — compute percentages
+  const bboxLeft = (box[0] / ow * 100).toFixed(2);
+  const bboxTop = (box[1] / oh * 100).toFixed(2);
+  const bboxWidth = ((box[2] - box[0]) / ow * 100).toFixed(2);
+  const bboxHeight = ((box[3] - box[1]) / oh * 100).toFixed(2);
+
+  const bal = e.balance.map(b => Math.round(b * 100));
+
+  return `
+    <div class="detail-grid">
+      <div>
+        <div class="detail-section-title">Source overlay with crop location</div>
+        <div class="bbox-container">
+          <img src="${h(e.overlay)}" alt="Source overlay" loading="lazy"
+               data-lightbox="${h(e.overlay)}" data-caption="Source overlay: ${h(e.source_transition)}">
+          <div class="bbox-rect" style="left:${bboxLeft}%;top:${bboxTop}%;width:${bboxWidth}%;height:${bboxHeight}%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="detail-section-title">Crop visualization</div>
+        <img src="${h(e.crop_viz)}" alt="Crop visualization" loading="lazy"
+             style="width:100%; border-radius:8px;"
+             data-lightbox="${h(e.crop_viz)}" data-caption="Crop visualization: ${h(e.crop_name)}">
+      </div>
+    </div>
+    <div class="detail-masks">
+      <div class="detail-masks-col">
+        <div class="col-label">Raw</div>
+        <div class="detail-masks-row">
+          <div>
+            <img src="${h(e.crop_image)}" alt="Raw crop" data-lightbox="${h(e.crop_image)}" data-caption="Raw crop">
+            <div class="img-label">Crop</div>
+          </div>
+          <div>
+            <img src="${h(e.mask_a)}" alt="Mask A" data-lightbox="${h(e.mask_a)}" data-caption="Raw Mask A: ${h(e.texture_a)}">
+            <div class="img-label" style="color:var(--red-a)">Mask A</div>
+          </div>
+          <div>
+            <img src="${h(e.mask_b)}" alt="Mask B" data-lightbox="${h(e.mask_b)}" data-caption="Raw Mask B: ${h(e.texture_b)}">
+            <div class="img-label" style="color:var(--blue-b)">Mask B</div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-masks-col">
+        <div class="col-label">Refined (${e.scale_factor}x + SDF)</div>
+        <div class="detail-masks-row">
+          <div>
+            <img src="${h(e.refined_image)}" alt="Refined crop" data-lightbox="${h(e.refined_image)}" data-caption="Refined crop (${e.scale_factor}x)">
+            <div class="img-label">Crop</div>
+          </div>
+          <div>
+            <img src="${h(e.refined_mask_a)}" alt="Refined Mask A" data-lightbox="${h(e.refined_mask_a)}" data-caption="Refined Mask A (SDF): ${h(e.texture_a)}">
+            <div class="img-label" style="color:var(--red-a)">Mask A</div>
+          </div>
+          <div>
+            <img src="${h(e.refined_mask_b)}" alt="Refined Mask B" data-lightbox="${h(e.refined_mask_b)}" data-caption="Refined Mask B (SDF): ${h(e.texture_b)}">
+            <div class="img-label" style="color:var(--blue-b)">Mask B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-meta">
+      <span><strong>A:</strong> ${h(e.texture_a)}</span>
+      <span><strong>B:</strong> ${h(e.texture_b)}</span>
+      <span><strong>Size:</strong> ${e.crop_width}&times;${e.crop_height} &rarr; ${e.refined_width}&times;${e.refined_height}</span>
+      <span><strong>Balance:</strong> ${bal[0]}/${bal[1]}</span>
+      ${e.crop_score ? `<span><strong>Score:</strong> ${e.crop_score.toFixed(4)}</span>` : ''}
+      <span><strong>Source:</strong> ${h(e.source_image_id)}</span>
+    </div>`;
 }
 
 // ── Filter & Sort ──
@@ -142,7 +266,6 @@ function renderPage() {
 }
 
 function h(s) {
-  // HTML-escape for safe attribute/content insertion
   if (!s) return '';
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
@@ -151,7 +274,7 @@ function renderCropCard(e) {
   const shortSource = e.source_image_id.replace('training_ADE_train_', '');
   const bal = e.balance.map(b => Math.round(b * 100));
   return `
-    <div class="crop-card">
+    <div class="crop-card" data-crop-name="${h(e.crop_name)}">
       <div class="card-source">
         <img src="${h(e.source_thumb)}" alt="source" loading="lazy"
              data-lightbox="${h(e.source_thumb)}" data-caption="Source: ${h(e.source_image_id)}">
@@ -182,6 +305,7 @@ function renderCropCard(e) {
         <span>Balance: ${bal[0]}/${bal[1]}</span>
         ${e.crop_score ? `<span>Score: ${e.crop_score.toFixed(4)}</span>` : ''}
       </div>
+      <div class="expand-indicator">Click to expand</div>
     </div>`;
 }
 
@@ -189,7 +313,7 @@ function renderRefinedCard(e) {
   const shortSource = e.source_image_id.replace('training_ADE_train_', '');
   const bal = e.balance.map(b => Math.round(b * 100));
   return `
-    <div class="crop-card">
+    <div class="crop-card" data-crop-name="${h(e.crop_name)}">
       <div class="card-source">
         <img src="${h(e.source_thumb)}" alt="source" loading="lazy"
              data-lightbox="${h(e.source_thumb)}" data-caption="Source: ${h(e.source_image_id)}">
@@ -237,6 +361,7 @@ function renderRefinedCard(e) {
         <span>${e.crop_width}&times;${e.crop_height} &rarr; ${e.refined_width}&times;${e.refined_height}</span>
         <span>Balance: ${bal[0]}/${bal[1]}</span>
       </div>
+      <div class="expand-indicator">Click to expand</div>
     </div>`;
 }
 
@@ -327,7 +452,6 @@ function closeLightbox() {
   document.body.style.overflow = '';
 }
 
-// Close on backdrop click
 document.addEventListener('DOMContentLoaded', () => {
   const lb = document.getElementById('lightbox');
   if (lb) {
@@ -337,7 +461,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Close on Escape
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox();
 });
