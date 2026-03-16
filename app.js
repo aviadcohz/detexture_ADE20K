@@ -142,8 +142,9 @@ function renderDetail(e) {
         <div class="col-label">Raw</div>
         <div class="detail-masks-row">
           <div>
-            ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
-            <div class="img-label">Overlay</div>
+            <img src="${h(e.crop_viz)}" alt="Visualization" loading="lazy"
+                 data-lightbox="${h(e.crop_viz)}" data-caption="Crop visualization: ${h(e.crop_name)}">
+            <div class="img-label">Visualization</div>
           </div>
           <div>
             <img src="${h(e.crop_image)}" alt="Raw crop" data-lightbox="${h(e.crop_image)}" data-caption="Raw crop">
@@ -163,8 +164,9 @@ function renderDetail(e) {
         <div class="col-label">Refined (${e.scale_factor}x + SDF)</div>
         <div class="detail-masks-row">
           <div>
-            ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
-            <div class="img-label">Overlay</div>
+            <img src="${h(e.crop_viz)}" alt="Visualization" loading="lazy"
+                 data-lightbox="${h(e.crop_viz)}" data-caption="Crop visualization: ${h(e.crop_name)}">
+            <div class="img-label">Visualization</div>
           </div>
           <div>
             <img src="${h(e.refined_image)}" alt="Refined crop" data-lightbox="${h(e.refined_image)}" data-caption="Refined crop (${e.scale_factor}x)">
@@ -179,14 +181,6 @@ function renderDetail(e) {
             <div class="img-label" style="color:var(--blue-b)">Mask B</div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="detail-grid mt-1">
-      <div>
-        <div class="detail-section-title">Crop visualization</div>
-        <img src="${h(e.crop_viz)}" alt="Crop viz" loading="lazy"
-             style="width:100%; border-radius:8px;"
-             data-lightbox="${h(e.crop_viz)}" data-caption="Crop visualization: ${h(e.crop_name)}">
       </div>
     </div>
     <div class="detail-meta">
