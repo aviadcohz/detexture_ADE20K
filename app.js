@@ -12,17 +12,26 @@ let entryIndex = {};
 // ── Data Loading ──
 async function loadGallery() {
   if (galleryData) return galleryData;
-  const resp = await fetch('gallery.json');
-  galleryData = await resp.json();
-  entryIndex = {};
-  for (const e of galleryData.entries) {
-    entryIndex[e.crop_name] = e;
+  try {
+    const resp = await fetch('gallery.json');
+    if (!resp.ok) throw new Error(`HTTP ${resp.status} ${resp.statusText}`);
+    galleryData = await resp.json();
+    entryIndex = {};
+    for (const e of galleryData.entries) {
+      entryIndex[e.crop_name] = e;
+    }
+    return galleryData;
+  } catch (err) {
+    console.error('Failed to load gallery.json:', err);
+    document.getElementById('gallery-grid').innerHTML =
+      `<p style="color:red;padding:2rem;">Error loading gallery data: ${err.message}</p>`;
+    throw err;
   }
-  return galleryData;
 }
 
 // ── Init ──
 async function initGallery(mode) {
+  try {
   currentMode = mode;
   const data = await loadGallery();
   filteredEntries = [...data.entries];
@@ -50,6 +59,13 @@ async function initGallery(mode) {
 
   document.getElementById('gallery-grid').addEventListener('click', handleGalleryClick);
   applyFilters();
+  } catch (err) {
+    console.error('initGallery error:', err);
+    const grid = document.getElementById('gallery-grid');
+    if (grid && !grid.innerHTML.includes('Error')) {
+      grid.innerHTML = `<p style="color:red;padding:2rem;">Gallery init failed: ${err.message}</p>`;
+    }
+  }
 }
 
 // ── Event Delegation ──
