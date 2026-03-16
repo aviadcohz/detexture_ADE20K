@@ -137,20 +137,14 @@ function renderDetail(e) {
   const bal = e.balance.map(b => Math.round(b * 100));
 
   return `
-    <div class="detail-grid">
-      <div>
-        <div class="detail-section-title">Source image</div>
-        ${bboxOverlayHtml(e, e.trans_image, 'Source image: ' + e.source_transition)}
-      </div>
-      <div>
-        <div class="detail-section-title">Overlay with crop location</div>
-        ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
-      </div>
-    </div>
     <div class="detail-masks">
       <div class="detail-masks-col">
         <div class="col-label">Raw</div>
         <div class="detail-masks-row">
+          <div>
+            ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
+            <div class="img-label">Overlay</div>
+          </div>
           <div>
             <img src="${h(e.crop_image)}" alt="Raw crop" data-lightbox="${h(e.crop_image)}" data-caption="Raw crop">
             <div class="img-label">Crop</div>
@@ -168,6 +162,10 @@ function renderDetail(e) {
       <div class="detail-masks-col">
         <div class="col-label">Refined (${e.scale_factor}x + SDF)</div>
         <div class="detail-masks-row">
+          <div>
+            ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
+            <div class="img-label">Overlay</div>
+          </div>
           <div>
             <img src="${h(e.refined_image)}" alt="Refined crop" data-lightbox="${h(e.refined_image)}" data-caption="Refined crop (${e.scale_factor}x)">
             <div class="img-label">Crop</div>
