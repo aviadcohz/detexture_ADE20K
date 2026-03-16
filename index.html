@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Architexture — Texture Transition Dataset</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="logo" href="index.html">Archi<span>texture</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Overview</a>
+      <a href="crops.html">Crops Explorer</a>
+      <a href="refined.html">Refinement Explorer</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Archi<span>texture</span></h1>
+    <p class="tagline">
+      A VLM-powered pipeline that extracts texture transition boundaries from ADE20K
+      semantic segmentation masks &mdash; producing high-quality crops with
+      per-texture binary masks and rich descriptions.
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- KPI Metrics -->
+  <div class="kpi-grid" id="kpi-grid">
+    <div class="kpi"><div class="val">525</div><div class="label">Input Images</div></div>
+    <div class="kpi"><div class="val">455</div><div class="label">Processed</div></div>
+    <div class="kpi"><div class="val">734</div><div class="label">Transitions</div></div>
+    <div class="kpi"><div class="val">1,057</div><div class="label">Crops Extracted</div></div>
+    <div class="kpi"><div class="val">103px</div><div class="label">Avg Crop Size</div></div>
+    <div class="kpi"><div class="val">206px</div><div class="label">Avg Refined Size</div></div>
+    <div class="kpi"><div class="val">2&times;</div><div class="label">SR Upscale</div></div>
+    <div class="kpi"><div class="val">29m</div><div class="label">Processing Time</div></div>
+  </div>
+
+  <!-- Mosaic preview -->
+  <div class="mosaic" id="mosaic"></div>
+
+  <!-- Gallery Links -->
+  <div class="gallery-links">
+    <a class="gallery-link-card" href="crops.html">
+      <div class="icon">&#x1F33F;</div>
+      <h3>Crops Explorer</h3>
+      <p>Browse all 1,057 boundary crops with source images, texture masks, and VLM-generated descriptions.</p>
+    </a>
+    <a class="gallery-link-card" href="refined.html">
+      <div class="icon">&#x2728;</div>
+      <h3>Refinement Explorer</h3>
+      <p>Compare raw vs. super-resolved crops with SDF-smoothed masks. See the refinement pipeline in action.</p>
+    </a>
+  </div>
+
+  <!-- Pipeline Overview -->
+  <h2 class="mb-2" style="font-size:1.5rem;">Pipeline Overview</h2>
+  <div class="pipeline-flow mb-3">
+    <div class="stage-card">
+      <div class="stage-num">1</div>
+      <div class="stage-content">
+        <h3>Qwen3-VL Texture Analysis</h3>
+        <p>Each image is paired with its colored segmentation mask and sent to Qwen3-VL-8B.
+        The model identifies adjacent texture transitions and outputs JSON with 5&ndash;9 word
+        discriminative descriptions and mask color assignments for each texture region.</p>
+      </div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num">2</div>
+      <div class="stage-content">
+        <h3>Binary Mask Extraction</h3>
+        <p>RGB color matching extracts binary masks from the segmentation. Connected-component
+        filtering ensures only physically adjacent regions are paired. Duplicate transitions
+        are removed by mask IoU and text similarity.</p>
+      </div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num">3</div>
+      <div class="stage-content">
+        <h3>Boundary Crop Extraction</h3>
+        <p>The boundary between textures is skeletonized. Anchor points are sampled along it,
+        and a binary search finds the maximal crop at each anchor across multiple aspect ratios.
+        NMS removes overlapping crops. Third-class pixels are assigned to the nearest texture by color distance.</p>
+      </div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num">4</div>
+      <div class="stage-content">
+        <h3>Super-Resolution Refinement</h3>
+        <p>All crops are upscaled 2&times; using Real-ESRGAN x2plus, then clipped to a maximum
+        of 512px per side. This brings the average crop from 103px to 206px.</p>
+      </div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num">5</div>
+      <div class="stage-content">
+        <h3>SDF Mask Smoothing</h3>
+        <p>Signed distance fields are computed for each mask. A Gaussian-smoothed SDF is thresholded
+        at zero to produce complementary masks with smooth polynomial-like boundaries &mdash;
+        zero gaps, zero overlap, every pixel assigned exactly once.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Built on <a href="https://groups.csail.mit.edu/vision/datasets/ADE20K/" target="_blank">ADE20K</a>
+    &middot; Powered by <a href="https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct" target="_blank">Qwen3-VL</a>
+    &amp; <a href="https://github.com/xinntao/Real-ESRGAN" target="_blank">Real-ESRGAN</a>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="close-btn" onclick="closeLightbox()">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="caption" id="lightbox-caption"></div>
+</div>
+
+<script src="app.js"></script>
+<script>
+  // Load mosaic on index page
+  fetch('gallery.json').then(r=>r.json()).then(data => {
+    const mosaic = document.getElementById('mosaic');
+    const shuffled = data.entries.sort(() => Math.random() - 0.5).slice(0, 24);
+    shuffled.forEach(e => {
+      const img = document.createElement('img');
+      img.src = e.refined_image;
+      img.alt = e.texture_a + ' / ' + e.texture_b;
+      img.loading = 'lazy';
+      img.addEventListener('click', () => openLightbox(e.refined_image, e.texture_a + ' / ' + e.texture_b));
+      mosaic.appendChild(img);
+    });
+  }).catch(err => console.error('Failed to load gallery.json:', err));
+</script>
+
+</body>
+</html>

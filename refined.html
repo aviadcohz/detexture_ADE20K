@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Refinement Explorer — Architexture</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="logo" href="index.html">Archi<span>texture</span></a>
+    <div class="nav-links">
+      <a href="index.html">Overview</a>
+      <a href="crops.html">Crops Explorer</a>
+      <a href="refined.html" class="active">Refinement Explorer</a>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" style="padding-top: 32px;">
+  <h1 style="font-size:1.8rem; margin-bottom: 8px;">Refinement Explorer</h1>
+  <p style="color:var(--muted); margin-bottom: 24px;">
+    Compare raw crops with their 2&times; super-resolved versions. See how Real-ESRGAN upscaling
+    and SDF mask smoothing transform rough crops into clean training samples.
+  </p>
+
+  <!-- Controls -->
+  <div class="gallery-controls">
+    <input type="text" class="search-bar" id="search-input"
+           placeholder="Search textures... (e.g. grass, stone, water)">
+    <div class="control-group">
+      <label>Sort</label>
+      <select class="sort-select" id="sort-select">
+        <option value="source">Source Image</option>
+        <option value="size-desc">Refined Size (largest)</option>
+        <option value="size-asc">Refined Size (smallest)</option>
+        <option value="balance">Best Balance</option>
+        <option value="alpha">Alphabetical</option>
+      </select>
+    </div>
+    <button class="btn-toggle" id="group-toggle">Group by Source</button>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-strip" id="stats-strip">
+    Showing <strong id="shown-count">0</strong> of <strong id="total-count">0</strong> refined crops
+    &nbsp;&middot;&nbsp; Avg refined size: <strong id="avg-size">0</strong>px
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-grid" id="gallery-grid"></div>
+
+  <!-- Pagination -->
+  <div class="pagination" id="pagination"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="index.html">&larr; Back to Overview</a>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="close-btn" onclick="closeLightbox()">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="caption" id="lightbox-caption"></div>
+</div>
+
+<script src="app.js"></script>
+<script>initGallery('refined');</script>
+
+</body>
+</html>
