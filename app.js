@@ -7,7 +7,6 @@ let currentMode = 'crops'; // 'crops' or 'refined'
 let groupBySource = false;
 const PER_PAGE = 48;
 
-// Index entries by crop_name for quick lookup
 let entryIndex = {};
 
 // ── Data Loading ──
@@ -15,7 +14,6 @@ async function loadGallery() {
   if (galleryData) return galleryData;
   const resp = await fetch('gallery.json');
   galleryData = await resp.json();
-  // Build index
   entryIndex = {};
   for (const e of galleryData.entries) {
     entryIndex[e.crop_name] = e;
@@ -50,23 +48,18 @@ async function initGallery(mode) {
     applyFilters();
   });
 
-  // Event delegation for gallery grid
   document.getElementById('gallery-grid').addEventListener('click', handleGalleryClick);
-
   applyFilters();
 }
 
 // ── Event Delegation ──
 function handleGalleryClick(e) {
-  // Lightbox clicks (on images with data-lightbox)
   const lbTarget = e.target.closest('[data-lightbox]');
   if (lbTarget) {
     e.stopPropagation();
     openLightbox(lbTarget.getAttribute('data-lightbox'), lbTarget.getAttribute('data-caption') || '');
     return;
   }
-
-  // Card expand/collapse clicks
   const card = e.target.closest('.crop-card');
   if (card && card.dataset.cropName) {
     toggleDetail(card);
@@ -79,13 +72,11 @@ function toggleDetail(card) {
   const existing = card.querySelector('.card-detail');
 
   if (existing) {
-    // Collapse
     existing.remove();
     card.classList.remove('expanded');
     return;
   }
 
-  // Collapse any other expanded card
   const grid = document.getElementById('gallery-grid');
   const prevExpanded = grid.querySelector('.crop-card.expanded');
   if (prevExpanded) {
@@ -94,7 +85,6 @@ function toggleDetail(card) {
     prevExpanded.classList.remove('expanded');
   }
 
-  // Expand this card
   const entry = entryIndex[cropName];
   if (!entry) return;
 
@@ -105,33 +95,40 @@ function toggleDetail(card) {
   card.appendChild(detail);
 }
 
-function renderDetail(e) {
-  const box = e.source_box || [0, 0, 0, 0];
-  const ow = e.overlay_w || 256;
-  const oh = e.overlay_h || 256;
-  // source_box is [x1, y1, x2, y2] — compute percentages
-  const bboxLeft = (box[0] / ow * 100).toFixed(2);
-  const bboxTop = (box[1] / oh * 100).toFixed(2);
-  const bboxWidth = ((box[2] - box[0]) / ow * 100).toFixed(2);
-  const bboxHeight = ((box[3] - box[1]) / oh * 100).toFixed(2);
+// ── Bbox helper: source_box is [y1, x1, y2, x2] ──
+function bboxStyle(box, ow, oh) {
+  if (!box || box.length < 4) return '';
+  const y1 = box[0], x1 = box[1], y2 = box[2], x2 = box[3];
+  const left = (x1 / ow * 100).toFixed(2);
+  const top = (y1 / oh * 100).toFixed(2);
+  const width = ((x2 - x1) / ow * 100).toFixed(2);
+  const height = ((y2 - y1) / oh * 100).toFixed(2);
+  return `left:${left}%;top:${top}%;width:${width}%;height:${height}%`;
+}
 
+// ── Inline bbox overlay HTML ──
+function bboxOverlayHtml(e, imgSrc, caption) {
+  const style = bboxStyle(e.source_box, e.overlay_w || 256, e.overlay_h || 256);
+  return `
+    <div class="bbox-container">
+      <img src="${h(imgSrc)}" alt="overlay" loading="lazy"
+           data-lightbox="${h(imgSrc)}" data-caption="${h(caption)}">
+      <div class="bbox-rect" style="${style}"></div>
+    </div>`;
+}
+
+function renderDetail(e) {
   const bal = e.balance.map(b => Math.round(b * 100));
 
   return `
     <div class="detail-grid">
       <div>
-        <div class="detail-section-title">Source overlay with crop location</div>
-        <div class="bbox-container">
-          <img src="${h(e.overlay)}" alt="Source overlay" loading="lazy"
-               data-lightbox="${h(e.overlay)}" data-caption="Source overlay: ${h(e.source_transition)}">
-          <div class="bbox-rect" style="left:${bboxLeft}%;top:${bboxTop}%;width:${bboxWidth}%;height:${bboxHeight}%"></div>
-        </div>
+        <div class="detail-section-title">Source image</div>
+        ${bboxOverlayHtml(e, e.trans_image, 'Source image: ' + e.source_transition)}
       </div>
       <div>
-        <div class="detail-section-title">Crop visualization</div>
-        <img src="${h(e.crop_viz)}" alt="Crop visualization" loading="lazy"
-             style="width:100%; border-radius:8px;"
-             data-lightbox="${h(e.crop_viz)}" data-caption="Crop visualization: ${h(e.crop_name)}">
+        <div class="detail-section-title">Overlay with crop location</div>
+        ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
       </div>
     </div>
     <div class="detail-masks">
@@ -168,6 +165,14 @@ function renderDetail(e) {
             <div class="img-label" style="color:var(--blue-b)">Mask B</div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="detail-grid mt-1">
+      <div>
+        <div class="detail-section-title">Crop visualization</div>
+        <img src="${h(e.crop_viz)}" alt="Crop viz" loading="lazy"
+             style="width:100%; border-radius:8px;"
+             data-lightbox="${h(e.crop_viz)}" data-caption="Crop visualization: ${h(e.crop_name)}">
       </div>
     </div>
     <div class="detail-meta">
@@ -237,7 +242,6 @@ function applyFilters() {
 function updateStats() {
   document.getElementById('shown-count').textContent = filteredEntries.length;
   document.getElementById('total-count').textContent = galleryData.entries.length;
-
   const sizes = filteredEntries.map(e =>
     currentMode === 'refined'
       ? Math.min(e.refined_width, e.refined_height)
@@ -261,7 +265,6 @@ function renderPage() {
       currentMode === 'refined' ? renderRefinedCard(e) : renderCropCard(e)
     ).join('');
   }
-
   renderPagination(totalPages);
 }
 
@@ -281,6 +284,16 @@ function renderCropCard(e) {
         <div>
           <div class="source-id">ADE ${h(shortSource)}</div>
           <div>${h(e.source_transition.split('_').pop())}</div>
+        </div>
+      </div>
+      <div class="card-overlay-row">
+        <div class="card-overlay-item">
+          ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
+          <div class="card-overlay-label">Overlay</div>
+        </div>
+        <div class="card-overlay-item">
+          ${bboxOverlayHtml(e, e.trans_image, 'Source: ' + e.source_transition)}
+          <div class="card-overlay-label">Source</div>
         </div>
       </div>
       <div class="card-images">
@@ -305,7 +318,7 @@ function renderCropCard(e) {
         <span>Balance: ${bal[0]}/${bal[1]}</span>
         ${e.crop_score ? `<span>Score: ${e.crop_score.toFixed(4)}</span>` : ''}
       </div>
-      <div class="expand-indicator">Click to expand</div>
+      <div class="expand-indicator">Click to expand details</div>
     </div>`;
 }
 
@@ -320,6 +333,16 @@ function renderRefinedCard(e) {
         <div>
           <div class="source-id">ADE ${h(shortSource)}</div>
           <div>${e.crop_width}&times;${e.crop_height} &rarr; ${e.refined_width}&times;${e.refined_height} (${e.scale_factor}&times;)</div>
+        </div>
+      </div>
+      <div class="card-overlay-row">
+        <div class="card-overlay-item">
+          ${bboxOverlayHtml(e, e.overlay, 'Overlay: ' + e.source_transition)}
+          <div class="card-overlay-label">Overlay</div>
+        </div>
+        <div class="card-overlay-item">
+          ${bboxOverlayHtml(e, e.trans_image, 'Source: ' + e.source_transition)}
+          <div class="card-overlay-label">Source</div>
         </div>
       </div>
       <div class="card-comparison" style="position:relative;">
@@ -361,7 +384,7 @@ function renderRefinedCard(e) {
         <span>${e.crop_width}&times;${e.crop_height} &rarr; ${e.refined_width}&times;${e.refined_height}</span>
         <span>Balance: ${bal[0]}/${bal[1]}</span>
       </div>
-      <div class="expand-indicator">Click to expand</div>
+      <div class="expand-indicator">Click to expand details</div>
     </div>`;
 }
 
@@ -399,7 +422,6 @@ function renderPagination(totalPages) {
 
   let html = '';
   html += `<button ${currentPage === 1 ? 'disabled' : ''} onclick="goPage(${currentPage - 1})">&laquo; Prev</button>`;
-
   const pages = getPageNumbers(currentPage, totalPages, 7);
   for (const p of pages) {
     if (p === '...') {
@@ -408,7 +430,6 @@ function renderPagination(totalPages) {
       html += `<button class="${p === currentPage ? 'active' : ''}" onclick="goPage(${p})">${p}</button>`;
     }
   }
-
   html += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="goPage(${currentPage + 1})">Next &raquo;</button>`;
   html += `<span class="page-info">Page ${currentPage} of ${totalPages}</span>`;
   pag.innerHTML = html;
@@ -416,8 +437,7 @@ function renderPagination(totalPages) {
 
 function getPageNumbers(current, total, maxButtons) {
   if (total <= maxButtons) return Array.from({ length: total }, (_, i) => i + 1);
-  const pages = [];
-  pages.push(1);
+  const pages = [1];
   let start = Math.max(2, current - 2);
   let end = Math.min(total - 1, current + 2);
   if (start > 2) pages.push('...');
@@ -437,10 +457,8 @@ function goPage(page) {
 // ── Lightbox ──
 function openLightbox(src, caption) {
   const lb = document.getElementById('lightbox');
-  const img = document.getElementById('lightbox-img');
-  const cap = document.getElementById('lightbox-caption');
-  img.src = src;
-  cap.textContent = caption || '';
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-caption').textContent = caption || '';
   lb.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -454,22 +472,12 @@ function closeLightbox() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const lb = document.getElementById('lightbox');
-  if (lb) {
-    lb.addEventListener('click', (e) => {
-      if (e.target === lb) closeLightbox();
-    });
-  }
+  if (lb) lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
 });
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
-});
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
 
 // ── Utilities ──
 function debounce(fn, ms) {
   let timer;
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => fn(...args), ms);
-  };
+  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
 }

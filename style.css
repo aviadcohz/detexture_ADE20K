@@ -244,6 +244,25 @@ select.sort-select {
   font-size: .85rem;
 }
 
+/* ── Card Overlay Row (source + overlay with bbox) ── */
+.card-overlay-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+}
+.card-overlay-item {
+  position: relative;
+}
+.card-overlay-label {
+  text-align: center;
+  font-size: .65rem;
+  color: var(--muted);
+  padding: 2px 0;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
 .card-images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

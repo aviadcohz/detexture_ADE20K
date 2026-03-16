@@ -166,6 +166,17 @@ def main():
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops)} crop visualizations")
 
+    # Step 8: Copy transition-level source images (the actual photos)
+    print("\nCopying transition source images...")
+    trans_images_dir = ASSETS / "trans_images"
+    trans_images_dir.mkdir(parents=True, exist_ok=True)
+    for trans in seen_transitions:
+        src = DATASET / "images" / f"{trans}.jpg"
+        dst = trans_images_dir / f"{trans}.jpg"
+        if src.exists() and not dst.exists():
+            shutil.copy2(src, dst)
+    print(f"  Done: {len(seen_transitions)} transition images")
+
     # Generate gallery.json
     print("\nGenerating gallery.json...")
     gallery_entries = []
@@ -207,6 +218,7 @@ def main():
             "refined_mask_b": f"assets/refined_masks/{Path(crop['refined_mask_b_path']).name}",
             "overlay": f"assets/overlays/{source_transition}.jpg",
             "crop_viz": f"assets/crop_viz/{crop_name}.jpg",
+            "trans_image": f"assets/trans_images/{source_transition}.jpg",
         }
         gallery_entries.append(entry)
 
