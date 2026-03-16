@@ -166,7 +166,21 @@ def main():
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops)} crop visualizations")
 
-    # Step 8: Copy transition-level source images (the actual photos)
+    # Step 8: Copy refined crop visualizations
+    print("\nCopying refined crop visualizations...")
+    refined_viz_dir = ASSETS / "refined_viz"
+    refined_viz_dir.mkdir(parents=True, exist_ok=True)
+    for i, crop in enumerate(crops):
+        crop_name = crop["crop_name"]
+        src = DATASET / "crops" / "refined" / "visualizations" / f"{crop_name}.jpg"
+        dst = refined_viz_dir / f"{crop_name}.jpg"
+        if src.exists() and not dst.exists():
+            shutil.copy2(src, dst)
+        if (i + 1) % 200 == 0:
+            print(f"  {i + 1}/{len(crops)}")
+    print(f"  Done: {len(crops)} refined crop visualizations")
+
+    # Step 9: Copy transition-level source images (the actual photos)
     print("\nCopying transition source images...")
     trans_images_dir = ASSETS / "trans_images"
     trans_images_dir.mkdir(parents=True, exist_ok=True)
@@ -218,6 +232,7 @@ def main():
             "refined_mask_b": f"assets/refined_masks/{Path(crop['refined_mask_b_path']).name}",
             "overlay": f"assets/overlays/{source_transition}.jpg",
             "crop_viz": f"assets/crop_viz/{crop_name}.jpg",
+            "refined_viz": f"assets/refined_viz/{crop_name}.jpg",
             "trans_image": f"assets/trans_images/{source_transition}.jpg",
         }
         gallery_entries.append(entry)

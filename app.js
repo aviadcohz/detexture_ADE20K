@@ -164,8 +164,8 @@ function renderDetail(e) {
         <div class="col-label">Refined (${e.scale_factor}x + SDF)</div>
         <div class="detail-masks-row">
           <div>
-            <img src="${h(e.crop_viz)}" alt="Visualization" loading="lazy"
-                 data-lightbox="${h(e.crop_viz)}" data-caption="Crop visualization: ${h(e.crop_name)}">
+            <img src="${h(e.refined_viz)}" alt="Refined Visualization" loading="lazy"
+                 data-lightbox="${h(e.refined_viz)}" data-caption="Refined visualization: ${h(e.crop_name)}">
             <div class="img-label">Visualization</div>
           </div>
           <div>
