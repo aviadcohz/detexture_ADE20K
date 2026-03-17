@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Boundary Texture Crops - ADE20K</title>
+  <title>Detecture Boundary Crop V2 — ADE20K</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <nav class="topnav">
   <div class="wrap">
-    <a class="logo" href="index.html">Boundary Texture Crops<span> - ADE20K</span></a>
+    <a class="logo" href="index.html">Detecture Boundary Crop V2<span> — ADE20K</span></a>
     <div class="nav-links">
       <a href="index.html" class="active">Overview</a>
       <a href="crops.html">Crops Explorer</a>
@@ -23,26 +23,26 @@
 
 <header class="hero">
   <div class="wrap">
-    <h1>Boundary Texture Crops<span> - ADE20K</span></h1>
+    <h1>Detecture Boundary Crop V2<span> — ADE20K</span></h1>
     <p class="tagline">
-      A VLM-powered pipeline that extracts texture transition boundaries from ADE20K
-      semantic segmentation masks &mdash; producing high-quality crops with
-      per-texture binary masks and rich descriptions.
+      A VLM-powered pipeline that discovers texture boundaries in ADE20K images using
+      oriented bounding boxes (OBB) &mdash; producing axis-aligned crops with
+      per-texture binary masks, selective super-resolution, and rich descriptions.
     </p>
   </div>
 </header>
 
 <main class="wrap">
-  <!-- KPI Metrics -->
+  <!-- KPI Metrics (populated from gallery.json) -->
   <div class="kpi-grid" id="kpi-grid">
-    <div class="kpi"><div class="val">525</div><div class="label">Input Images</div></div>
-    <div class="kpi"><div class="val">455</div><div class="label">Processed</div></div>
-    <div class="kpi"><div class="val">734</div><div class="label">Transitions</div></div>
-    <div class="kpi"><div class="val">1,057</div><div class="label">Crops Extracted</div></div>
-    <div class="kpi"><div class="val">103px</div><div class="label">Avg Crop Size</div></div>
-    <div class="kpi"><div class="val">206px</div><div class="label">Avg Refined Size</div></div>
-    <div class="kpi"><div class="val">2&times;</div><div class="label">SR Upscale</div></div>
-    <div class="kpi"><div class="val">29m</div><div class="label">Processing Time</div></div>
+    <div class="kpi"><div class="val" id="kpi-input">—</div><div class="label">Input Images</div></div>
+    <div class="kpi"><div class="val" id="kpi-processed">—</div><div class="label">Processed</div></div>
+    <div class="kpi"><div class="val" id="kpi-transitions">—</div><div class="label">Transitions</div></div>
+    <div class="kpi"><div class="val" id="kpi-crops">—</div><div class="label">Crops Extracted</div></div>
+    <div class="kpi"><div class="val" id="kpi-sources">—</div><div class="label">Source Images</div></div>
+    <div class="kpi"><div class="val" id="kpi-refined">—</div><div class="label">SR Refined</div></div>
+    <div class="kpi"><div class="val" id="kpi-avgsize">—</div><div class="label">Avg Crop Size</div></div>
+    <div class="kpi"><div class="val" id="kpi-time">—</div><div class="label">Processing Time</div></div>
   </div>
 
   <!-- Mosaic preview -->
@@ -53,12 +53,12 @@
     <a class="gallery-link-card" href="crops.html">
       <div class="icon">&#x1F33F;</div>
       <h3>Crops Explorer</h3>
-      <p>Browse all 1,057 boundary crops with source images, texture masks, and VLM-generated descriptions.</p>
+      <p>Browse all boundary crops with source images, texture masks, and VLM-generated descriptions.</p>
     </a>
     <a class="gallery-link-card" href="refined.html">
       <div class="icon">&#x2728;</div>
       <h3>Refinement Explorer</h3>
-      <p>Compare raw vs. super-resolved crops with SDF-smoothed masks. See the refinement pipeline in action.</p>
+      <p>Compare raw crops with their best version (SR-refined for small crops, original for large ones).</p>
     </a>
   </div>
 
@@ -86,27 +86,21 @@
     <div class="stage-card">
       <div class="stage-num">3</div>
       <div class="stage-content">
-        <h3>Boundary Crop Extraction</h3>
-        <p>The boundary between textures is skeletonized. Anchor points are sampled along it,
-        and a binary search finds the maximal crop at each anchor across multiple aspect ratios.
-        NMS removes overlapping crops. Third-class pixels are assigned to the nearest texture by color distance.</p>
+        <h3>OBB-Based Boundary Crop Extraction</h3>
+        <p>Boundary contours between textures are discovered by mask dilation and intersection.
+        Curved boundaries are split into straight segments via polygon approximation.
+        Oriented bounding boxes (OBBs) are fitted to each segment, then dynamically expanded
+        as axis-aligned crops with center-biased boundaries. NMS and visual-similarity deduplication
+        remove overlapping crops.</p>
       </div>
     </div>
     <div class="stage-card">
       <div class="stage-num">4</div>
       <div class="stage-content">
-        <h3>Super-Resolution Refinement</h3>
-        <p>All crops are upscaled 2&times; using Real-ESRGAN x2plus, then clipped to a maximum
-        of 512px per side. This brings the average crop from 103px to 206px.</p>
-      </div>
-    </div>
-    <div class="stage-card">
-      <div class="stage-num">5</div>
-      <div class="stage-content">
-        <h3>SDF Mask Smoothing</h3>
-        <p>Signed distance fields are computed for each mask. A Gaussian-smoothed SDF is thresholded
-        at zero to produce complementary masks with smooth polynomial-like boundaries &mdash;
-        zero gaps, zero overlap, every pixel assigned exactly once.</p>
+        <h3>Selective Super-Resolution</h3>
+        <p>Only small crops (&lt;200px min side) are upscaled 2&times; using Real-ESRGAN x2plus
+        with SDF mask smoothing. Large crops are kept at native resolution to avoid SR artifacts.
+        A unified &ldquo;final&rdquo; directory stores the best version of each crop.</p>
       </div>
     </div>
   </div>
@@ -129,8 +123,22 @@
 
 <script src="app.js"></script>
 <script>
-  // Load mosaic on index page
+  // Load KPIs and mosaic from gallery.json
   fetch('gallery.json').then(r=>r.json()).then(data => {
+    // Populate KPIs
+    const s = data.stats || {};
+    const setKpi = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+    setKpi('kpi-input', (s.total_input_images || 0).toLocaleString());
+    setKpi('kpi-processed', (s.images_processed || 0).toLocaleString());
+    setKpi('kpi-transitions', (s.transitions_found || 0).toLocaleString());
+    setKpi('kpi-crops', (s.total_crops || data.entries.length).toLocaleString());
+    setKpi('kpi-sources', (s.unique_source_images || 0).toLocaleString());
+    setKpi('kpi-refined', (s.refined_count || 0).toLocaleString());
+    setKpi('kpi-avgsize', Math.round(s.mean_crop_input_px || 0) + 'px');
+    const mins = Math.round((s.processing_time_sec || 0) / 60);
+    setKpi('kpi-time', mins + 'm');
+
+    // Mosaic
     const mosaic = document.getElementById('mosaic');
     const shuffled = data.entries.sort(() => Math.random() - 0.5).slice(0, 24);
     shuffled.forEach(e => {

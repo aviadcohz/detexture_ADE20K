@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Refinement Explorer — Boundary Texture Crops - ADE20K</title>
+  <title>Refinement Explorer — Detecture Boundary Crop V2</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
 
 <nav class="topnav">
   <div class="wrap">
-    <a class="logo" href="index.html">Boundary Texture Crops<span> - ADE20K</span></a>
+    <a class="logo" href="index.html">Detecture Boundary Crop V2<span> — ADE20K</span></a>
     <div class="nav-links">
       <a href="index.html">Overview</a>
       <a href="crops.html">Crops Explorer</a>
@@ -23,8 +23,8 @@
 <main class="wrap" style="padding-top: 32px;">
   <h1 style="font-size:1.8rem; margin-bottom: 8px;">Refinement Explorer</h1>
   <p style="color:var(--muted); margin-bottom: 24px;">
-    Compare raw crops with their 2&times; super-resolved versions. See how Real-ESRGAN upscaling
-    and SDF mask smoothing transform rough crops into clean training samples.
+    Compare raw crops with their best version. Small crops (&lt;200px) get 2&times; SR + SDF smoothing.
+    Large crops are kept at native resolution. The &ldquo;refined&rdquo; column shows the final output used for training.
   </p>
 
   <!-- Controls -->

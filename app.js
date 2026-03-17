@@ -161,7 +161,7 @@ function renderDetail(e) {
         </div>
       </div>
       <div class="detail-masks-col">
-        <div class="col-label">Refined (${e.scale_factor}x + SDF)</div>
+        <div class="col-label">${e.scale_factor > 1 ? `Refined (${e.scale_factor}x + SDF)` : 'Final (native)'}</div>
         <div class="detail-masks-row">
           <div>
             <img src="${h(e.refined_viz)}" alt="Refined Visualization" loading="lazy"
@@ -344,7 +344,7 @@ function renderRefinedCard(e) {
              data-lightbox="${h(e.source_thumb)}" data-caption="Source: ${h(e.source_image_id)}">
         <div>
           <div class="source-id">ADE ${h(shortSource)} &middot; ${h(cropLabel)}</div>
-          <div>${e.crop_width}&times;${e.crop_height} &rarr; ${e.refined_width}&times;${e.refined_height} (${e.scale_factor}&times;)</div>
+          <div>${e.crop_width}&times;${e.crop_height}${e.scale_factor > 1 ? ` &rarr; ${e.refined_width}&times;${e.refined_height} (${e.scale_factor}&times;)` : ' (native)'}</div>
         </div>
       </div>
       <div class="card-overlay-row">
