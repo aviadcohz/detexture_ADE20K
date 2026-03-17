@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare assets for the Architexture GitHub Pages site.
+"""Prepare assets for the Detecture GitHub Pages site.
 
 Reads dataset metadata, copies/compresses images, and generates gallery.json.
 """
