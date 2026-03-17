@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Prepare assets for the Detecture GitHub Pages site.
+"""Prepare assets for the Detecture v2 GitHub Pages site.
 
-Reads dataset metadata, copies/compresses images, and generates gallery.json.
+Reads the unified pipeline output (final/ = best version per crop),
+copies/compresses images, and generates gallery.json.
 """
 
 import json
 import shutil
 from pathlib import Path
 from PIL import Image
-import sys
 
 # Paths
-DATASET = Path("/datasets/ade20k/Detecture_dataset_x2")
+DATASET = Path("/datasets/ade20k/Detecture_v2")
 SITE = Path(__file__).parent
 ASSETS = SITE / "assets"
 
@@ -31,11 +31,11 @@ def thumbnail_source(src_path: Path, dst_path: Path, max_side=256):
         print(f"  WARN: Failed to thumbnail {src_path}: {e}")
 
 
-def compress_refined(src_path: Path, dst_path: Path):
-    """Convert refined PNG to JPEG q85."""
+def compress_to_jpeg(src_path: Path, dst_path: Path, quality=85):
+    """Convert any image to JPEG."""
     try:
         img = Image.open(src_path).convert("RGB")
-        img.save(dst_path, "JPEG", quality=85)
+        img.save(dst_path, "JPEG", quality=quality)
     except Exception as e:
         print(f"  WARN: Failed to compress {src_path}: {e}")
 
@@ -51,23 +51,20 @@ def main():
 
     print(f"  {len(crops)} crops, {len(transitions)} transitions")
 
-    # Build source image index (deduplicate by source_image_id)
-    # Map source_image_id -> source image path from transitions
+    # Build source image index
     source_images = {}
     for t in transitions:
-        img_path = t["image"]
-        # Extract source_image_id from transition filename
-        # e.g. "training_ADE_train_00000191_t0" -> "training_ADE_train_00000191"
+        img_path = t.get("image", "")
+        if not img_path:
+            continue
         fname = Path(img_path).stem
-        # Remove _t{N} suffix to get source_image_id
         parts = fname.rsplit("_t", 1)
         source_id = parts[0] if len(parts) == 2 else fname
         if source_id not in source_images:
             source_images[source_id] = img_path
-
     print(f"  {len(source_images)} unique source images")
 
-    # Step 1: Copy source image thumbnails
+    # Step 1: Source thumbnails
     print("\nCopying source thumbnails...")
     sources_dir = ASSETS / "sources"
     sources_dir.mkdir(parents=True, exist_ok=True)
@@ -79,65 +76,72 @@ def main():
             print(f"  {i + 1}/{len(source_images)}")
     print(f"  Done: {len(source_images)} thumbnails")
 
-    # Step 2: Copy crop images (as-is, already small)
+    # Step 2: Raw crop images
     print("\nCopying crop images...")
     crops_dir = ASSETS / "crops"
     crops_dir.mkdir(parents=True, exist_ok=True)
     for i, crop in enumerate(crops):
         src = Path(crop["image_path"])
-        dst = crops_dir / src.name
+        # image_path points to final/ — raw crops are in crops/images/
+        raw_src = DATASET / "crops" / "images" / f"{crop['crop_name']}.jpg"
+        dst = crops_dir / f"{crop['crop_name']}.jpg"
         if not dst.exists():
-            shutil.copy2(src, dst)
+            if raw_src.exists():
+                shutil.copy2(raw_src, dst)
+            elif src.exists():
+                shutil.copy2(src, dst)
         if (i + 1) % 200 == 0:
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops)} crops")
 
-    # Step 3: Copy crop masks (as-is)
+    # Step 3: Raw crop masks
     print("\nCopying crop masks...")
     masks_dir = ASSETS / "masks"
     masks_dir.mkdir(parents=True, exist_ok=True)
     for i, crop in enumerate(crops):
-        for key in ("mask_a_path", "mask_b_path"):
-            src = Path(crop[key])
-            dst = masks_dir / src.name
-            if not dst.exists():
-                shutil.copy2(src, dst)
+        name = crop["crop_name"]
+        for suffix in ("mask_a", "mask_b"):
+            raw_src = DATASET / "crops" / "masks_texture" / f"{name}_{suffix}.png"
+            dst = masks_dir / f"{name}_{suffix}.png"
+            if not dst.exists() and raw_src.exists():
+                shutil.copy2(raw_src, dst)
         if (i + 1) % 200 == 0:
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops) * 2} masks")
 
-    # Step 4: Compress refined crops (PNG -> JPEG)
-    print("\nCompressing refined crops...")
+    # Step 4: Final (best) images -> "refined" directory for site compat
+    print("\nCopying final (best) images as refined...")
     refined_dir = ASSETS / "refined"
     refined_dir.mkdir(parents=True, exist_ok=True)
     for i, crop in enumerate(crops):
-        src = Path(crop["refined_image_path"])
-        dst = refined_dir / (src.stem + ".jpg")
-        if not dst.exists():
-            compress_refined(src, dst)
+        src = Path(crop["image_path"])  # points to final/
+        dst = refined_dir / f"{crop['crop_name']}.jpg"
+        if not dst.exists() and src.exists():
+            compress_to_jpeg(src, dst)
         if (i + 1) % 200 == 0:
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops)} refined crops")
 
-    # Step 5: Copy refined masks (as-is)
-    print("\nCopying refined masks...")
+    # Step 5: Final (best) masks -> "refined_masks" for site compat
+    print("\nCopying final masks as refined masks...")
     refined_masks_dir = ASSETS / "refined_masks"
     refined_masks_dir.mkdir(parents=True, exist_ok=True)
     for i, crop in enumerate(crops):
-        for key in ("refined_mask_a_path", "refined_mask_b_path"):
-            src = Path(crop[key])
-            dst = refined_masks_dir / src.name
-            if not dst.exists():
+        name = crop["crop_name"]
+        for key, suffix in [("mask_a_path", "mask_a"), ("mask_b_path", "mask_b")]:
+            src = Path(crop[key])  # points to final/
+            dst = refined_masks_dir / f"{name}_{suffix}.png"
+            if not dst.exists() and src.exists():
                 shutil.copy2(src, dst)
         if (i + 1) % 200 == 0:
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops) * 2} refined masks")
 
-    # Step 6: Copy overlays (per transition, deduplicated)
+    # Step 6: Overlays
     print("\nCopying overlays...")
     overlays_dir = ASSETS / "overlays"
     overlays_dir.mkdir(parents=True, exist_ok=True)
-    overlay_sizes = {}  # transition_name -> (w, h)
+    overlay_sizes = {}
     seen_transitions = set()
     for crop in crops:
         trans = crop.get("source_transition", "")
@@ -149,38 +153,38 @@ def main():
                 shutil.copy2(src, dst)
             if src.exists():
                 img = Image.open(src)
-                overlay_sizes[trans] = img.size  # (w, h)
+                overlay_sizes[trans] = img.size
     print(f"  Done: {len(seen_transitions)} overlays")
 
-    # Step 7: Copy crop visualizations
+    # Step 7: Crop visualizations
     print("\nCopying crop visualizations...")
     crop_viz_dir = ASSETS / "crop_viz"
     crop_viz_dir.mkdir(parents=True, exist_ok=True)
     for i, crop in enumerate(crops):
-        crop_name = crop["crop_name"]
-        src = DATASET / "crops" / "visualizations" / f"{crop_name}.jpg"
-        dst = crop_viz_dir / f"{crop_name}.jpg"
+        name = crop["crop_name"]
+        src = DATASET / "crops" / "visualizations" / f"{name}.jpg"
+        dst = crop_viz_dir / f"{name}.jpg"
         if src.exists() and not dst.exists():
             shutil.copy2(src, dst)
         if (i + 1) % 200 == 0:
             print(f"  {i + 1}/{len(crops)}")
     print(f"  Done: {len(crops)} crop visualizations")
 
-    # Step 8: Copy refined crop visualizations
-    print("\nCopying refined crop visualizations...")
+    # Step 8: Final visualizations -> "refined_viz" for site compat
+    print("\nCopying final visualizations as refined viz...")
     refined_viz_dir = ASSETS / "refined_viz"
     refined_viz_dir.mkdir(parents=True, exist_ok=True)
     for i, crop in enumerate(crops):
-        crop_name = crop["crop_name"]
-        src = DATASET / "crops" / "refined" / "visualizations" / f"{crop_name}.jpg"
-        dst = refined_viz_dir / f"{crop_name}.jpg"
+        name = crop["crop_name"]
+        src = DATASET / "final" / "visualizations" / f"{name}.jpg"
+        dst = refined_viz_dir / f"{name}.jpg"
         if src.exists() and not dst.exists():
             shutil.copy2(src, dst)
         if (i + 1) % 200 == 0:
             print(f"  {i + 1}/{len(crops)}")
-    print(f"  Done: {len(crops)} refined crop visualizations")
+    print(f"  Done: {len(crops)} refined visualizations")
 
-    # Step 9: Copy transition-level source images (the actual photos)
+    # Step 9: Transition source images
     print("\nCopying transition source images...")
     trans_images_dir = ASSETS / "trans_images"
     trans_images_dir.mkdir(parents=True, exist_ok=True)
@@ -195,59 +199,71 @@ def main():
     print("\nGenerating gallery.json...")
     gallery_entries = []
     for crop in crops:
-        crop_name = crop["crop_name"]
+        name = crop["crop_name"]
         source_id = crop.get("source_image_id", "")
-        coords = crop.get("coords", [])
-        w = coords[3] - coords[1] if len(coords) == 4 else 0
-        h = coords[2] - coords[0] if len(coords) == 4 else 0
-        refined_size = crop.get("refined_size", [0, 0])
+        coords = crop.get("coords", [0, 0, 0, 0])
+        crop_w = coords[2] if len(coords) > 2 else 0
+        crop_h = coords[3] if len(coords) > 3 else 0
 
         source_transition = crop.get("source_transition", "")
-        source_box = crop.get("source_box", [0, 0, 0, 0])
         ov_size = overlay_sizes.get(source_transition, (256, 256))
 
-        entry = {
-            "crop_name": crop_name,
+        # For refined dimensions: if refined, use coords (which are final size)
+        # otherwise same as crop size
+        is_refined = crop.get("is_refined", False)
+        scale = crop.get("scale_factor", 1)
+        if is_refined:
+            refined_w = crop_w
+            refined_h = crop_h
+            # Original raw crop size is crop_size / scale
+            raw_w = crop_w // scale if scale > 0 else crop_w
+            raw_h = crop_h // scale if scale > 0 else crop_h
+        else:
+            raw_w = crop_w
+            raw_h = crop_h
+            refined_w = crop_w
+            refined_h = crop_h
+
+        gallery_entries.append({
+            "crop_name": name,
             "source_image_id": source_id,
             "source_transition": source_transition,
             "texture_a": crop.get("texture_a", ""),
             "texture_b": crop.get("texture_b", ""),
-            "crop_width": w,
-            "crop_height": h,
-            "refined_width": refined_size[1] if len(refined_size) > 1 else 0,
-            "refined_height": refined_size[0] if len(refined_size) > 0 else 0,
-            "scale_factor": crop.get("scale_factor", 1),
+            "crop_width": raw_w,
+            "crop_height": raw_h,
+            "refined_width": refined_w,
+            "refined_height": refined_h,
+            "scale_factor": scale,
             "balance": crop.get("balance", [0, 0]),
             "crop_score": crop.get("crop_score", 0),
-            "source_box": source_box,
+            "source_box": crop.get("source_box", [0, 0, 0, 0]),
             "overlay_w": ov_size[0],
             "overlay_h": ov_size[1],
-            # Relative paths for the site
             "source_thumb": f"assets/sources/{source_id}.jpg",
-            "crop_image": f"assets/crops/{Path(crop['image_path']).name}",
-            "mask_a": f"assets/masks/{Path(crop['mask_a_path']).name}",
-            "mask_b": f"assets/masks/{Path(crop['mask_b_path']).name}",
-            "refined_image": f"assets/refined/{Path(crop['refined_image_path']).stem}.jpg",
-            "refined_mask_a": f"assets/refined_masks/{Path(crop['refined_mask_a_path']).name}",
-            "refined_mask_b": f"assets/refined_masks/{Path(crop['refined_mask_b_path']).name}",
+            "crop_image": f"assets/crops/{name}.jpg",
+            "mask_a": f"assets/masks/{name}_mask_a.png",
+            "mask_b": f"assets/masks/{name}_mask_b.png",
+            "refined_image": f"assets/refined/{name}.jpg",
+            "refined_mask_a": f"assets/refined_masks/{name}_mask_a.png",
+            "refined_mask_b": f"assets/refined_masks/{name}_mask_b.png",
             "overlay": f"assets/overlays/{source_transition}.jpg",
-            "crop_viz": f"assets/crop_viz/{crop_name}.jpg",
-            "refined_viz": f"assets/refined_viz/{crop_name}.jpg",
+            "crop_viz": f"assets/crop_viz/{name}.jpg",
             "trans_image": f"assets/trans_images/{source_transition}.jpg",
-        }
-        gallery_entries.append(entry)
+            "refined_viz": f"assets/refined_viz/{name}.jpg",
+        })
 
     gallery = {
         "stats": {
-            "total_input_images": stats.get("total_images", 525),
-            "images_processed": stats.get("processed", 455),
-            "failed": stats.get("failed", 70),
-            "transitions_found": stats.get("transitions_found", 734),
-            "total_crops": stats.get("total_crops", 1057),
-            "refined_count": stats.get("refined_count", 1057),
-            "mean_crop_input_px": stats.get("crop_input_min_side_mean", 103),
-            "mean_refined_output_px": stats.get("refined_output_min_side_mean", 206),
-            "processing_time_sec": stats.get("elapsed_seconds", 1764.6),
+            "total_input_images": stats.get("total_images", 0),
+            "images_processed": stats.get("processed", 0),
+            "failed": stats.get("failed", 0),
+            "transitions_found": stats.get("transitions_found", 0),
+            "total_crops": len(gallery_entries),
+            "refined_count": sum(1 for c in crops if c.get("is_refined")),
+            "mean_crop_input_px": stats.get("crop_input_min_side_mean", 0),
+            "mean_refined_output_px": stats.get("crop_input_min_side_median", 0),
+            "processing_time_sec": stats.get("elapsed_seconds", 0),
             "unique_source_images": len(source_images),
         },
         "entries": gallery_entries,
