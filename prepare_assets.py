@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare assets for the Detecture v2 GitHub Pages site.
+"""Prepare assets for the DeTexture GitHub Pages site.
 
 Reads the unified pipeline output (final/ = best version per crop),
 copies/compresses images, and generates gallery.json.
@@ -11,7 +11,7 @@ from pathlib import Path
 from PIL import Image
 
 # Paths
-DATASET = Path("/datasets/ade20k/Detecture_v2")
+DATASET = Path("/datasets/ade20k/DeTexture")
 SITE = Path(__file__).parent
 ASSETS = SITE / "assets"
 
