@@ -160,16 +160,16 @@
    "crop_name": "training_ADE_train_00000569_t1_crop0",
    "source_image_id": "training_ADE_train_00000569",
    "source_transition": "training_ADE_train_00000569_t1",
-   "texture_a": "dark wet volcanic rock with rough surface",
-   "texture_b": "foamy white sea spray with turbulent motion",
+   "texture_a": "foamy white sea spray with turbulent motion",
+   "texture_b": "dark wet volcanic rock with rough surface",
    "crop_width": 256,
    "crop_height": 174,
    "refined_width": 512,
    "refined_height": 348,
    "scale_factor": 2,
    "balance": [
-    0.493,
-    0.47
+    0.47,
+    0.493
    ],
    "crop_score": 7.291314,
    "source_box": [
@@ -376,16 +376,16 @@
    "crop_name": "training_ADE_train_00001271_t1_crop0",
    "source_image_id": "training_ADE_train_00001271",
    "source_transition": "training_ADE_train_00001271_t1",
-   "texture_a": "wavy brown wooden panels with vertical grain",
-   "texture_b": "dirt path with scattered dry leaves",
+   "texture_a": "dirt path with scattered dry leaves",
+   "texture_b": "wavy brown wooden panels with vertical grain",
    "crop_width": 399,
    "crop_height": 406,
    "refined_width": 399,
    "refined_height": 406,
    "scale_factor": 1,
    "balance": [
-    0.649,
-    0.316
+    0.316,
+    0.649
    ],
    "crop_score": 1.048242,
    "source_box": [
@@ -592,16 +592,16 @@
    "crop_name": "training_ADE_train_00003084_t0_crop0",
    "source_image_id": "training_ADE_train_00003084",
    "source_transition": "training_ADE_train_00003084_t0",
-   "texture_a": "wet sandy beach with fine granular texture",
-   "texture_b": "foamy white ocean water with turbulent motion",
+   "texture_a": "foamy white ocean water with turbulent motion",
+   "texture_b": "wet sandy beach with fine granular texture",
    "crop_width": 256,
    "crop_height": 176,
    "refined_width": 512,
    "refined_height": 352,
    "scale_factor": 2,
    "balance": [
-    0.481,
-    0.495
+    0.495,
+    0.481
    ],
    "crop_score": 1.474751,
    "source_box": [
@@ -628,16 +628,16 @@
    "crop_name": "training_ADE_train_00003090_t1_crop0",
    "source_image_id": "training_ADE_train_00003090",
    "source_transition": "training_ADE_train_00003090_t1",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "calm clear turquoise water with gentle gradient",
+   "texture_a": "calm clear turquoise water with gentle gradient",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 256,
    "crop_height": 152,
    "refined_width": 512,
    "refined_height": 304,
    "scale_factor": 2,
    "balance": [
-    0.461,
-    0.513
+    0.513,
+    0.461
    ],
    "crop_score": 1.445865,
    "source_box": [
@@ -664,16 +664,16 @@
    "crop_name": "training_ADE_train_00003100_t2_crop0",
    "source_image_id": "training_ADE_train_00003100",
    "source_transition": "training_ADE_train_00003100_t2",
-   "texture_a": "calm clear turquoise water with gentle waves",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "calm clear turquoise water with gentle waves",
    "crop_width": 256,
    "crop_height": 150,
    "refined_width": 512,
    "refined_height": 300,
    "scale_factor": 2,
    "balance": [
-    0.437,
-    0.532
+    0.532,
+    0.437
    ],
    "crop_score": 1.663861,
    "source_box": [
@@ -700,16 +700,16 @@
    "crop_name": "training_ADE_train_00003105_t0_crop0",
    "source_image_id": "training_ADE_train_00003105",
    "source_transition": "training_ADE_train_00003105_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "calm turquoise ocean water with white foam",
+   "texture_a": "calm turquoise ocean water with white foam",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 379,
    "crop_height": 217,
    "refined_width": 379,
    "refined_height": 217,
    "scale_factor": 1,
    "balance": [
-    0.441,
-    0.554
+    0.554,
+    0.441
    ],
    "crop_score": 0.983253,
    "source_box": [
@@ -736,16 +736,16 @@
    "crop_name": "training_ADE_train_00003105_t0_crop1",
    "source_image_id": "training_ADE_train_00003105",
    "source_transition": "training_ADE_train_00003105_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "calm turquoise ocean water with white foam",
+   "texture_a": "calm turquoise ocean water with white foam",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 256,
    "crop_height": 108,
    "refined_width": 512,
    "refined_height": 216,
    "scale_factor": 2,
    "balance": [
-    0.401,
-    0.59
+    0.59,
+    0.401
    ],
    "crop_score": 0.340797,
    "source_box": [
@@ -772,16 +772,16 @@
    "crop_name": "training_ADE_train_00003105_t1_crop0",
    "source_image_id": "training_ADE_train_00003105",
    "source_transition": "training_ADE_train_00003105_t1",
-   "texture_a": "calm turquoise ocean water with white foam",
-   "texture_b": "dense green vegetation with palm fronds",
+   "texture_a": "reddish-brown earth with dry surface",
+   "texture_b": "calm turquoise ocean water with white foam",
    "crop_width": 237,
    "crop_height": 480,
    "refined_width": 237,
    "refined_height": 480,
    "scale_factor": 1,
    "balance": [
-    0.647,
-    0.342
+    0.342,
+    0.647
    ],
    "crop_score": 0.463871,
    "source_box": [
@@ -844,7 +844,7 @@
    "crop_name": "training_ADE_train_00003132_t0_crop0",
    "source_image_id": "training_ADE_train_00003132",
    "source_transition": "training_ADE_train_00003132_t0",
-   "texture_a": "rough dark volcanic rocks with sharp edges",
+   "texture_a": "calm blue water with gentle ripples",
    "texture_b": "smooth wet sandy beach with gentle slope",
    "crop_width": 105,
    "crop_height": 202,
@@ -880,7 +880,7 @@
    "crop_name": "training_ADE_train_00003132_t0_crop1",
    "source_image_id": "training_ADE_train_00003132",
    "source_transition": "training_ADE_train_00003132_t0",
-   "texture_a": "rough dark volcanic rocks with sharp edges",
+   "texture_a": "calm blue water with gentle ripples",
    "texture_b": "smooth wet sandy beach with gentle slope",
    "crop_width": 71,
    "crop_height": 256,
@@ -952,16 +952,16 @@
    "crop_name": "training_ADE_train_00003135_t0_crop0",
    "source_image_id": "training_ADE_train_00003135",
    "source_transition": "training_ADE_train_00003135_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 191,
    "crop_height": 130,
    "refined_width": 382,
    "refined_height": 260,
    "scale_factor": 2,
    "balance": [
-    0.364,
-    0.622
+    0.622,
+    0.364
    ],
    "crop_score": 2.521871,
    "source_box": [
@@ -1240,16 +1240,16 @@
    "crop_name": "training_ADE_train_00004424_t2_crop0",
    "source_image_id": "training_ADE_train_00004424",
    "source_transition": "training_ADE_train_00004424_t2",
-   "texture_a": "bright yellow flowers with layered petals",
-   "texture_b": "dark green coniferous foliage with needle texture",
+   "texture_a": "dark green coniferous foliage with needle texture",
+   "texture_b": "bright yellow flowers with layered petals",
    "crop_width": 446,
    "crop_height": 442,
    "refined_width": 446,
    "refined_height": 442,
    "scale_factor": 1,
    "balance": [
-    0.473,
-    0.485
+    0.485,
+    0.473
    ],
    "crop_score": 0.195175,
    "source_box": [
@@ -1385,7 +1385,7 @@
    "source_image_id": "training_ADE_train_00004427",
    "source_transition": "training_ADE_train_00004427_t1",
    "texture_a": "smooth light gray bark with rough vertical ridges",
-   "texture_b": "dense white blossoms with fine clustered petals",
+   "texture_b": "bright blue sky with scattered clouds",
    "crop_width": 194,
    "crop_height": 256,
    "refined_width": 388,
@@ -1421,7 +1421,7 @@
    "source_image_id": "training_ADE_train_00004427",
    "source_transition": "training_ADE_train_00004427_t1",
    "texture_a": "smooth light gray bark with rough vertical ridges",
-   "texture_b": "dense white blossoms with fine clustered petals",
+   "texture_b": "bright blue sky with scattered clouds",
    "crop_width": 256,
    "crop_height": 115,
    "refined_width": 512,
@@ -1564,16 +1564,16 @@
    "crop_name": "training_ADE_train_00004918_t2_crop0",
    "source_image_id": "training_ADE_train_00004918",
    "source_transition": "training_ADE_train_00004918_t2",
-   "texture_a": "dense green shrubbery with scattered shadows",
-   "texture_b": "dirt path with gravel and tire tracks",
+   "texture_a": "dirt path with gravel and tire tracks",
+   "texture_b": "dense green shrubbery with scattered shadows",
    "crop_width": 179,
    "crop_height": 102,
    "refined_width": 358,
    "refined_height": 204,
    "scale_factor": 2,
    "balance": [
-    0.523,
-    0.444
+    0.444,
+    0.523
    ],
    "crop_score": 0.518358,
    "source_box": [
@@ -1636,16 +1636,16 @@
    "crop_name": "training_ADE_train_00005009_t0_crop0",
    "source_image_id": "training_ADE_train_00005009",
    "source_transition": "training_ADE_train_00005009_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 165,
    "crop_height": 138,
    "refined_width": 330,
    "refined_height": 276,
    "scale_factor": 2,
    "balance": [
-    0.665,
-    0.305
+    0.305,
+    0.665
    ],
    "crop_score": 0.29206,
    "source_box": [
@@ -1672,16 +1672,16 @@
    "crop_name": "training_ADE_train_00005054_t0_crop0",
    "source_image_id": "training_ADE_train_00005054",
    "source_transition": "training_ADE_train_00005054_t0",
-   "texture_a": "rough layered sandstone with horizontal striations",
-   "texture_b": "dense green shrubbery with scattered shadows",
+   "texture_a": "dense green shrubbery with scattered shadows",
+   "texture_b": "rough layered sandstone with horizontal striations",
    "crop_width": 256,
    "crop_height": 202,
    "refined_width": 256,
    "refined_height": 202,
    "scale_factor": 1,
    "balance": [
-    0.5,
-    0.489
+    0.489,
+    0.5
    ],
    "crop_score": 0.176395,
    "source_box": [
@@ -1744,16 +1744,16 @@
    "crop_name": "training_ADE_train_00005241_t0_crop0",
    "source_image_id": "training_ADE_train_00005241",
    "source_transition": "training_ADE_train_00005241_t0",
-   "texture_a": "smooth beige cardboard with visible seams",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth beige cardboard with visible seams",
    "crop_width": 101,
    "crop_height": 64,
    "refined_width": 202,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.399,
-    0.543
+    0.543,
+    0.399
    ],
    "crop_score": 1.184258,
    "source_box": [
@@ -1780,16 +1780,16 @@
    "crop_name": "training_ADE_train_00005241_t0_crop1",
    "source_image_id": "training_ADE_train_00005241",
    "source_transition": "training_ADE_train_00005241_t0",
-   "texture_a": "smooth beige cardboard with visible seams",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth beige cardboard with visible seams",
    "crop_width": 226,
    "crop_height": 422,
    "refined_width": 226,
    "refined_height": 422,
    "scale_factor": 1,
    "balance": [
-    0.46,
-    0.494
+    0.494,
+    0.46
    ],
    "crop_score": 0.4605,
    "source_box": [
@@ -2032,16 +2032,16 @@
    "crop_name": "training_ADE_train_00006237_t0_crop0",
    "source_image_id": "training_ADE_train_00006237",
    "source_transition": "training_ADE_train_00006237_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 120,
    "crop_height": 84,
    "refined_width": 240,
    "refined_height": 168,
    "scale_factor": 2,
    "balance": [
-    0.63,
-    0.352
+    0.352,
+    0.63
    ],
    "crop_score": 0.620659,
    "source_box": [
@@ -2068,16 +2068,16 @@
    "crop_name": "training_ADE_train_00006249_t0_crop0",
    "source_image_id": "training_ADE_train_00006249",
    "source_transition": "training_ADE_train_00006249_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "gravel path with small stones and dirt",
+   "texture_a": "gravel path with small stones and dirt",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 240,
    "crop_height": 270,
    "refined_width": 240,
    "refined_height": 270,
    "scale_factor": 1,
    "balance": [
-    0.568,
-    0.398
+    0.398,
+    0.568
    ],
    "crop_score": 3.723518,
    "source_box": [
@@ -2104,16 +2104,16 @@
    "crop_name": "training_ADE_train_00006249_t0_crop1",
    "source_image_id": "training_ADE_train_00006249",
    "source_transition": "training_ADE_train_00006249_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "gravel path with small stones and dirt",
+   "texture_a": "gravel path with small stones and dirt",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 159,
    "crop_height": 64,
    "refined_width": 318,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.511,
-    0.383
+    0.383,
+    0.511
    ],
    "crop_score": 2.925787,
    "source_box": [
@@ -2176,16 +2176,16 @@
    "crop_name": "training_ADE_train_00006468_t0_crop0",
    "source_image_id": "training_ADE_train_00006468",
    "source_transition": "training_ADE_train_00006468_t0",
-   "texture_a": "rough dark wet rocks with moss patches",
-   "texture_b": "white foamy rushing water with turbulent flow",
+   "texture_a": "white foamy rushing water with turbulent flow",
+   "texture_b": "rough dark wet rocks with moss patches",
    "crop_width": 200,
    "crop_height": 131,
    "refined_width": 400,
    "refined_height": 262,
    "scale_factor": 2,
    "balance": [
-    0.52,
-    0.462
+    0.462,
+    0.52
    ],
    "crop_score": 0.692967,
    "source_box": [
@@ -2212,16 +2212,16 @@
    "crop_name": "training_ADE_train_00006473_t3_crop0",
    "source_image_id": "training_ADE_train_00006473",
    "source_transition": "training_ADE_train_00006473_t3",
-   "texture_a": "damp earthy ground with scattered leaves",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "damp earthy ground with scattered leaves",
    "crop_width": 148,
    "crop_height": 102,
    "refined_width": 296,
    "refined_height": 204,
    "scale_factor": 2,
    "balance": [
-    0.567,
-    0.394
+    0.394,
+    0.567
    ],
    "crop_score": 0.641102,
    "source_box": [
@@ -2320,16 +2320,16 @@
    "crop_name": "training_ADE_train_00006484_t0_crop0",
    "source_image_id": "training_ADE_train_00006484",
    "source_transition": "training_ADE_train_00006484_t0",
-   "texture_a": "wet mossy rock with dark green patches",
-   "texture_b": "foamy white water cascading over stones",
+   "texture_a": "foamy white water cascading over stones",
+   "texture_b": "wet mossy rock with dark green patches",
    "crop_width": 143,
    "crop_height": 64,
    "refined_width": 286,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.508,
-    0.385
+    0.385,
+    0.508
    ],
    "crop_score": 2.297257,
    "source_box": [
@@ -2356,16 +2356,16 @@
    "crop_name": "training_ADE_train_00006484_t0_crop1",
    "source_image_id": "training_ADE_train_00006484",
    "source_transition": "training_ADE_train_00006484_t0",
-   "texture_a": "wet mossy rock with dark green patches",
-   "texture_b": "foamy white water cascading over stones",
+   "texture_a": "foamy white water cascading over stones",
+   "texture_b": "wet mossy rock with dark green patches",
    "crop_width": 130,
    "crop_height": 256,
    "refined_width": 260,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.428,
-    0.539
+    0.539,
+    0.428
    ],
    "crop_score": 0.722263,
    "source_box": [
@@ -2896,16 +2896,16 @@
    "crop_name": "training_ADE_train_00006687_t1_crop0",
    "source_image_id": "training_ADE_train_00006687",
    "source_transition": "training_ADE_train_00006687_t1",
-   "texture_a": "dry sandy dune with wind-sculpted ridges",
-   "texture_b": "calm dark water surface with smooth reflection",
+   "texture_a": "calm dark water surface with smooth reflection",
+   "texture_b": "dry sandy dune with wind-sculpted ridges",
    "crop_width": 256,
    "crop_height": 104,
    "refined_width": 512,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.317,
-    0.672
+    0.672,
+    0.317
    ],
    "crop_score": 0.252145,
    "source_box": [
@@ -3112,16 +3112,16 @@
    "crop_name": "training_ADE_train_00007294_t2_crop0",
    "source_image_id": "training_ADE_train_00007294",
    "source_transition": "training_ADE_train_00007294_t2",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 103,
    "crop_height": 64,
    "refined_width": 206,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.429,
-    0.295
+    0.295,
+    0.429
    ],
    "crop_score": 1.176931,
    "source_box": [
@@ -3148,16 +3148,16 @@
    "crop_name": "training_ADE_train_00007295_t1_crop0",
    "source_image_id": "training_ADE_train_00007295",
    "source_transition": "training_ADE_train_00007295_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 148,
    "crop_height": 114,
    "refined_width": 296,
    "refined_height": 228,
    "scale_factor": 2,
    "balance": [
-    0.758,
-    0.197
+    0.197,
+    0.758
    ],
    "crop_score": 0.343025,
    "source_box": [
@@ -3256,16 +3256,16 @@
    "crop_name": "training_ADE_train_00007298_t1_crop0",
    "source_image_id": "training_ADE_train_00007298",
    "source_transition": "training_ADE_train_00007298_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 191,
    "crop_height": 92,
    "refined_width": 382,
    "refined_height": 184,
    "scale_factor": 2,
    "balance": [
-    0.791,
-    0.174
+    0.174,
+    0.791
    ],
    "crop_score": 0.695951,
    "source_box": [
@@ -3544,16 +3544,16 @@
    "crop_name": "training_ADE_train_00007640_t0_crop0",
    "source_image_id": "training_ADE_train_00007640",
    "source_transition": "training_ADE_train_00007640_t0",
-   "texture_a": "vertical striated rock face with dark bands",
-   "texture_b": "dense green foliage with varied leaf shapes",
+   "texture_a": "dense green foliage with varied leaf shapes",
+   "texture_b": "vertical striated rock face with dark bands",
    "crop_width": 83,
    "crop_height": 138,
    "refined_width": 166,
    "refined_height": 276,
    "scale_factor": 2,
    "balance": [
-    0.624,
-    0.361
+    0.361,
+    0.624
    ],
    "crop_score": 0.389895,
    "source_box": [
@@ -4048,16 +4048,16 @@
    "crop_name": "training_ADE_train_00007651_t0_crop0",
    "source_image_id": "training_ADE_train_00007651",
    "source_transition": "training_ADE_train_00007651_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 373,
    "crop_height": 465,
    "refined_width": 373,
    "refined_height": 465,
    "scale_factor": 1,
    "balance": [
-    0.476,
-    0.499
+    0.499,
+    0.476
    ],
    "crop_score": 0.54958,
    "source_box": [
@@ -4084,16 +4084,16 @@
    "crop_name": "training_ADE_train_00007651_t1_crop0",
    "source_image_id": "training_ADE_train_00007651",
    "source_transition": "training_ADE_train_00007651_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 115,
    "crop_height": 64,
    "refined_width": 230,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.529,
-    0.335
+    0.335,
+    0.529
    ],
    "crop_score": 1.400556,
    "source_box": [
@@ -4120,16 +4120,16 @@
    "crop_name": "training_ADE_train_00007651_t1_crop1",
    "source_image_id": "training_ADE_train_00007651",
    "source_transition": "training_ADE_train_00007651_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 113,
    "crop_height": 64,
    "refined_width": 226,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.546,
-    0.377
+    0.377,
+    0.546
    ],
    "crop_score": 1.12483,
    "source_box": [
@@ -4156,16 +4156,16 @@
    "crop_name": "training_ADE_train_00007651_t1_crop2",
    "source_image_id": "training_ADE_train_00007651",
    "source_transition": "training_ADE_train_00007651_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 124,
    "crop_height": 256,
    "refined_width": 248,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.114,
-    0.874
+    0.874,
+    0.114
    ],
    "crop_score": 0.249106,
    "source_box": [
@@ -4336,16 +4336,16 @@
    "crop_name": "training_ADE_train_00007691_t0_crop0",
    "source_image_id": "training_ADE_train_00007691",
    "source_transition": "training_ADE_train_00007691_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "dappled sunlight on grass with tree shadows",
+   "texture_a": "dappled sunlight on grass with tree shadows",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 683,
    "crop_height": 402,
    "refined_width": 683,
    "refined_height": 402,
    "scale_factor": 1,
    "balance": [
-    0.61,
-    0.355
+    0.355,
+    0.61
    ],
    "crop_score": 1.110913,
    "source_box": [
@@ -4444,16 +4444,16 @@
    "crop_name": "training_ADE_train_00007693_t1_crop0",
    "source_image_id": "training_ADE_train_00007693",
    "source_transition": "training_ADE_train_00007693_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 123,
    "crop_height": 64,
    "refined_width": 246,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.464,
-    0.468
+    0.468,
+    0.464
    ],
    "crop_score": 1.296288,
    "source_box": [
@@ -4480,16 +4480,16 @@
    "crop_name": "training_ADE_train_00007693_t1_crop1",
    "source_image_id": "training_ADE_train_00007693",
    "source_transition": "training_ADE_train_00007693_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 726,
    "crop_height": 305,
    "refined_width": 726,
    "refined_height": 305,
    "scale_factor": 1,
    "balance": [
-    0.379,
-    0.587
+    0.587,
+    0.379
    ],
    "crop_score": 0.190041,
    "source_box": [
@@ -4552,16 +4552,16 @@
    "crop_name": "training_ADE_train_00007698_t1_crop0",
    "source_image_id": "training_ADE_train_00007698",
    "source_transition": "training_ADE_train_00007698_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "calm blue water surface with gentle ripples",
+   "texture_a": "calm blue water surface with gentle ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 99,
    "refined_width": 512,
    "refined_height": 198,
    "scale_factor": 2,
    "balance": [
-    0.44,
-    0.484
+    0.484,
+    0.44
    ],
    "crop_score": 2.036723,
    "source_box": [
@@ -4588,16 +4588,16 @@
    "crop_name": "training_ADE_train_00007698_t1_crop1",
    "source_image_id": "training_ADE_train_00007698",
    "source_transition": "training_ADE_train_00007698_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "calm blue water surface with gentle ripples",
+   "texture_a": "calm blue water surface with gentle ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 150,
    "refined_width": 512,
    "refined_height": 300,
    "scale_factor": 2,
    "balance": [
-    0.346,
-    0.613
+    0.613,
+    0.346
    ],
    "crop_score": 0.515233,
    "source_box": [
@@ -4624,16 +4624,16 @@
    "crop_name": "training_ADE_train_00007700_t0_crop0",
    "source_image_id": "training_ADE_train_00007700",
    "source_transition": "training_ADE_train_00007700_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth dark water surface with ripples",
+   "texture_a": "smooth dark water surface with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 151,
    "crop_height": 64,
    "refined_width": 302,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.544,
-    0.445
+    0.445,
+    0.544
    ],
    "crop_score": 5.781936,
    "source_box": [
@@ -4660,16 +4660,16 @@
    "crop_name": "training_ADE_train_00007700_t0_crop1",
    "source_image_id": "training_ADE_train_00007700",
    "source_transition": "training_ADE_train_00007700_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth dark water surface with ripples",
+   "texture_a": "smooth dark water surface with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 167,
    "refined_width": 512,
    "refined_height": 334,
    "scale_factor": 2,
    "balance": [
-    0.882,
-    0.111
+    0.111,
+    0.882
    ],
    "crop_score": 0.405345,
    "source_box": [
@@ -4696,16 +4696,16 @@
    "crop_name": "training_ADE_train_00007701_t1_crop0",
    "source_image_id": "training_ADE_train_00007701",
    "source_transition": "training_ADE_train_00007701_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 193,
    "crop_height": 256,
    "refined_width": 386,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.645,
-    0.332
+    0.332,
+    0.645
    ],
    "crop_score": 0.565994,
    "source_box": [
@@ -4804,16 +4804,16 @@
    "crop_name": "training_ADE_train_00007794_t0_crop0",
    "source_image_id": "training_ADE_train_00007794",
    "source_transition": "training_ADE_train_00007794_t0",
-   "texture_a": "dense purple lavender field with fine spikes",
-   "texture_b": "lush green shrubbery with varied leaf shapes",
+   "texture_a": "lush green shrubbery with varied leaf shapes",
+   "texture_b": "dense purple lavender field with fine spikes",
    "crop_width": 217,
    "crop_height": 64,
    "refined_width": 434,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.481,
-    0.484
+    0.484,
+    0.481
    ],
    "crop_score": 2.288291,
    "source_box": [
@@ -4876,16 +4876,16 @@
    "crop_name": "training_ADE_train_00007803_t1_crop0",
    "source_image_id": "training_ADE_train_00007803",
    "source_transition": "training_ADE_train_00007803_t1",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "dark green foliage with dense canopy",
+   "texture_a": "dark green foliage with dense canopy",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 127,
    "crop_height": 124,
    "refined_width": 254,
    "refined_height": 248,
    "scale_factor": 2,
    "balance": [
-    0.386,
-    0.601
+    0.601,
+    0.386
    ],
    "crop_score": 0.355857,
    "source_box": [
@@ -5200,16 +5200,16 @@
    "crop_name": "training_ADE_train_00007855_t0_crop0",
    "source_image_id": "training_ADE_train_00007855",
    "source_transition": "training_ADE_train_00007855_t0",
-   "texture_a": "calm dark water with slight ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "calm dark water with slight ripples",
    "crop_width": 185,
    "crop_height": 164,
    "refined_width": 370,
    "refined_height": 328,
    "scale_factor": 2,
    "balance": [
-    0.733,
-    0.239
+    0.239,
+    0.733
    ],
    "crop_score": 0.653397,
    "source_box": [
@@ -5272,7 +5272,7 @@
    "crop_name": "training_ADE_train_00007857_t2_crop0",
    "source_image_id": "training_ADE_train_00007857",
    "source_transition": "training_ADE_train_00007857_t2",
-   "texture_a": "green grassy verge with scattered wildflowers",
+   "texture_a": "reddish-brown earth with dry surface",
    "texture_b": "smooth dark asphalt with tire marks",
    "crop_width": 94,
    "crop_height": 120,
@@ -5345,7 +5345,7 @@
    "source_image_id": "training_ADE_train_00007860",
    "source_transition": "training_ADE_train_00007860_t2",
    "texture_a": "dull brown gravel path with compacted dust",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_b": "dark reddish-brown soil with rough texture",
    "crop_width": 99,
    "crop_height": 190,
    "refined_width": 198,
@@ -6172,16 +6172,16 @@
    "crop_name": "training_ADE_train_00007949_t1_crop0",
    "source_image_id": "training_ADE_train_00007949",
    "source_transition": "training_ADE_train_00007949_t1",
-   "texture_a": "dark wet rock with sharp edges",
-   "texture_b": "blue-green water with scattered ice",
+   "texture_a": "blue-green water with scattered ice",
+   "texture_b": "dark wet rock with sharp edges",
    "crop_width": 256,
    "crop_height": 132,
    "refined_width": 512,
    "refined_height": 264,
    "scale_factor": 2,
    "balance": [
-    0.279,
-    0.702
+    0.702,
+    0.279
    ],
    "crop_score": 0.624481,
    "source_box": [
@@ -6496,16 +6496,16 @@
    "crop_name": "training_ADE_train_00008235_t2_crop0",
    "source_image_id": "training_ADE_train_00008235",
    "source_transition": "training_ADE_train_00008235_t2",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 435,
    "crop_height": 366,
    "refined_width": 435,
    "refined_height": 366,
    "scale_factor": 1,
    "balance": [
-    0.389,
-    0.583
+    0.583,
+    0.389
    ],
    "crop_score": 0.810587,
    "source_box": [
@@ -6532,16 +6532,16 @@
    "crop_name": "training_ADE_train_00008235_t2_crop1",
    "source_image_id": "training_ADE_train_00008235",
    "source_transition": "training_ADE_train_00008235_t2",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 184,
    "crop_height": 179,
    "refined_width": 368,
    "refined_height": 358,
    "scale_factor": 2,
    "balance": [
-    0.339,
-    0.648
+    0.648,
+    0.339
    ],
    "crop_score": 0.308407,
    "source_box": [
@@ -6748,16 +6748,16 @@
    "crop_name": "training_ADE_train_00008660_t0_crop0",
    "source_image_id": "training_ADE_train_00008660",
    "source_transition": "training_ADE_train_00008660_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough bark with vertical striations",
+   "texture_a": "rough bark with vertical striations",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 145,
    "refined_width": 512,
    "refined_height": 290,
    "scale_factor": 2,
    "balance": [
-    0.271,
-    0.692
+    0.692,
+    0.271
    ],
    "crop_score": 0.207649,
    "source_box": [
@@ -6964,16 +6964,16 @@
    "crop_name": "training_ADE_train_00008666_t0_crop0",
    "source_image_id": "training_ADE_train_00008666",
    "source_transition": "training_ADE_train_00008666_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 205,
    "crop_height": 64,
    "refined_width": 410,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.475,
-    0.489
+    0.489,
+    0.475
    ],
    "crop_score": 1.915676,
    "source_box": [
@@ -7000,16 +7000,16 @@
    "crop_name": "training_ADE_train_00008666_t0_crop1",
    "source_image_id": "training_ADE_train_00008666",
    "source_transition": "training_ADE_train_00008666_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 215,
    "crop_height": 120,
    "refined_width": 430,
    "refined_height": 240,
    "scale_factor": 2,
    "balance": [
-    0.726,
-    0.263
+    0.263,
+    0.726
    ],
    "crop_score": 0.691574,
    "source_box": [
@@ -7036,16 +7036,16 @@
    "crop_name": "training_ADE_train_00008666_t0_crop2",
    "source_image_id": "training_ADE_train_00008666",
    "source_transition": "training_ADE_train_00008666_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 333,
    "crop_height": 264,
    "refined_width": 333,
    "refined_height": 264,
    "scale_factor": 1,
    "balance": [
-    0.849,
-    0.133
+    0.133,
+    0.849
    ],
    "crop_score": 0.603653,
    "source_box": [
@@ -7072,16 +7072,16 @@
    "crop_name": "training_ADE_train_00008667_t1_crop0",
    "source_image_id": "training_ADE_train_00008667",
    "source_transition": "training_ADE_train_00008667_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth weathered stone with moss patches",
+   "texture_a": "smooth weathered stone with moss patches",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 224,
    "crop_height": 166,
    "refined_width": 448,
    "refined_height": 332,
    "scale_factor": 2,
    "balance": [
-    0.46,
-    0.523
+    0.523,
+    0.46
    ],
    "crop_score": 0.23269,
    "source_box": [
@@ -7108,16 +7108,16 @@
    "crop_name": "training_ADE_train_00008667_t1_crop1",
    "source_image_id": "training_ADE_train_00008667",
    "source_transition": "training_ADE_train_00008667_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth weathered stone with moss patches",
+   "texture_a": "smooth weathered stone with moss patches",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 556,
    "crop_height": 227,
    "refined_width": 556,
    "refined_height": 227,
    "scale_factor": 1,
    "balance": [
-    0.722,
-    0.246
+    0.246,
+    0.722
    ],
    "crop_score": 0.142107,
    "source_box": [
@@ -7360,16 +7360,16 @@
    "crop_name": "training_ADE_train_00008684_t0_crop0",
    "source_image_id": "training_ADE_train_00008684",
    "source_transition": "training_ADE_train_00008684_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 471,
    "crop_height": 301,
    "refined_width": 471,
    "refined_height": 301,
    "scale_factor": 1,
    "balance": [
-    0.506,
-    0.461
+    0.461,
+    0.506
    ],
    "crop_score": 0.322037,
    "source_box": [
@@ -7468,16 +7468,16 @@
    "crop_name": "training_ADE_train_00008685_t0_crop0",
    "source_image_id": "training_ADE_train_00008685",
    "source_transition": "training_ADE_train_00008685_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "gravel path with irregular stones",
+   "texture_a": "gravel path with irregular stones",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 456,
    "crop_height": 322,
    "refined_width": 456,
    "refined_height": 322,
    "scale_factor": 1,
    "balance": [
-    0.562,
-    0.39
+    0.39,
+    0.562
    ],
    "crop_score": 1.213328,
    "source_box": [
@@ -7936,16 +7936,16 @@
    "crop_name": "training_ADE_train_00008697_t0_crop0",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 66,
    "crop_height": 192,
    "refined_width": 132,
    "refined_height": 384,
    "scale_factor": 2,
    "balance": [
-    0.33,
-    0.351
+    0.351,
+    0.33
    ],
    "crop_score": 1.786034,
    "source_box": [
@@ -7972,16 +7972,16 @@
    "crop_name": "training_ADE_train_00008697_t1_crop0",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 73,
    "crop_height": 256,
    "refined_width": 146,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.351,
-    0.537
+    0.537,
+    0.351
    ],
    "crop_score": 1.997162,
    "source_box": [
@@ -8008,16 +8008,16 @@
    "crop_name": "training_ADE_train_00008697_t1_crop1",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 69,
    "crop_height": 244,
    "refined_width": 138,
    "refined_height": 488,
    "scale_factor": 2,
    "balance": [
-    0.316,
-    0.504
+    0.504,
+    0.316
    ],
    "crop_score": 1.892349,
    "source_box": [
@@ -8044,16 +8044,16 @@
    "crop_name": "training_ADE_train_00008697_t1_crop2",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 120,
    "crop_height": 256,
    "refined_width": 240,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.62,
-    0.342
+    0.342,
+    0.62
    ],
    "crop_score": 1.506211,
    "source_box": [
@@ -8080,16 +8080,16 @@
    "crop_name": "training_ADE_train_00008697_t1_crop3",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 131,
    "crop_height": 64,
    "refined_width": 262,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.389,
-    0.479
+    0.479,
+    0.389
    ],
    "crop_score": 1.407883,
    "source_box": [
@@ -8116,16 +8116,16 @@
    "crop_name": "training_ADE_train_00008697_t1_crop4",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 335,
    "crop_height": 296,
    "refined_width": 335,
    "refined_height": 296,
    "scale_factor": 1,
    "balance": [
-    0.463,
-    0.489
+    0.489,
+    0.463
    ],
    "crop_score": 1.046654,
    "source_box": [
@@ -8152,16 +8152,16 @@
    "crop_name": "training_ADE_train_00008697_t1_crop5",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 256,
    "crop_height": 150,
    "refined_width": 512,
    "refined_height": 300,
    "scale_factor": 2,
    "balance": [
-    0.349,
-    0.637
+    0.637,
+    0.349
    ],
    "crop_score": 0.559275,
    "source_box": [
@@ -8188,16 +8188,16 @@
    "crop_name": "training_ADE_train_00008697_t1_crop6",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 219,
    "crop_height": 288,
    "refined_width": 219,
    "refined_height": 288,
    "scale_factor": 1,
    "balance": [
-    0.28,
-    0.676
+    0.676,
+    0.28
    ],
    "crop_score": 0.219849,
    "source_box": [
@@ -8224,16 +8224,16 @@
    "crop_name": "training_ADE_train_00008697_t2_crop0",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t2",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 118,
    "crop_height": 64,
    "refined_width": 236,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.421,
-    0.504
+    0.504,
+    0.421
    ],
    "crop_score": 1.424239,
    "source_box": [
@@ -8260,16 +8260,16 @@
    "crop_name": "training_ADE_train_00008697_t2_crop1",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t2",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 544,
    "crop_height": 263,
    "refined_width": 544,
    "refined_height": 263,
    "scale_factor": 1,
    "balance": [
-    0.469,
-    0.497
+    0.497,
+    0.469
    ],
    "crop_score": 0.698064,
    "source_box": [
@@ -8296,16 +8296,16 @@
    "crop_name": "training_ADE_train_00008697_t2_crop2",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t2",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 117,
    "refined_width": 512,
    "refined_height": 234,
    "scale_factor": 2,
    "balance": [
-    0.364,
-    0.63
+    0.63,
+    0.364
    ],
    "crop_score": 0.334077,
    "source_box": [
@@ -8332,16 +8332,16 @@
    "crop_name": "training_ADE_train_00008697_t2_crop3",
    "source_image_id": "training_ADE_train_00008697",
    "source_transition": "training_ADE_train_00008697_t2",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 64,
    "crop_height": 256,
    "refined_width": 128,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.689,
-    0.304
+    0.304,
+    0.689
    ],
    "crop_score": 0.324908,
    "source_box": [
@@ -8620,16 +8620,16 @@
    "crop_name": "training_ADE_train_00009295_t0_crop0",
    "source_image_id": "training_ADE_train_00009295",
    "source_transition": "training_ADE_train_00009295_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 244,
    "crop_height": 160,
    "refined_width": 488,
    "refined_height": 320,
    "scale_factor": 2,
    "balance": [
-    0.704,
-    0.273
+    0.273,
+    0.704
    ],
    "crop_score": 1.25297,
    "source_box": [
@@ -8692,16 +8692,16 @@
    "crop_name": "training_ADE_train_00009471_t1_crop0",
    "source_image_id": "training_ADE_train_00009471",
    "source_transition": "training_ADE_train_00009471_t1",
-   "texture_a": "wet dark rock with mossy patches",
-   "texture_b": "dense green foliage with varied leaf shapes",
+   "texture_a": "dense green foliage with varied leaf shapes",
+   "texture_b": "wet dark rock with mossy patches",
    "crop_width": 256,
    "crop_height": 140,
    "refined_width": 512,
    "refined_height": 280,
    "scale_factor": 2,
    "balance": [
-    0.707,
-    0.293
+    0.293,
+    0.707
    ],
    "crop_score": 0.454467,
    "source_box": [
@@ -8728,16 +8728,16 @@
    "crop_name": "training_ADE_train_00009471_t1_crop1",
    "source_image_id": "training_ADE_train_00009471",
    "source_transition": "training_ADE_train_00009471_t1",
-   "texture_a": "wet dark rock with mossy patches",
-   "texture_b": "dense green foliage with varied leaf shapes",
+   "texture_a": "dense green foliage with varied leaf shapes",
+   "texture_b": "wet dark rock with mossy patches",
    "crop_width": 256,
    "crop_height": 133,
    "refined_width": 512,
    "refined_height": 266,
    "scale_factor": 2,
    "balance": [
-    0.705,
-    0.292
+    0.292,
+    0.705
    ],
    "crop_score": 0.297436,
    "source_box": [
@@ -8764,16 +8764,16 @@
    "crop_name": "training_ADE_train_00009473_t0_crop0",
    "source_image_id": "training_ADE_train_00009473",
    "source_transition": "training_ADE_train_00009473_t0",
-   "texture_a": "smooth turquoise water with steam rising",
-   "texture_b": "rough gray gravel with scattered stones",
+   "texture_a": "rough gray gravel with scattered stones",
+   "texture_b": "smooth turquoise water with steam rising",
    "crop_width": 64,
    "crop_height": 104,
    "refined_width": 128,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.534,
-    0.451
+    0.451,
+    0.534
    ],
    "crop_score": 0.659789,
    "source_box": [
@@ -8800,16 +8800,16 @@
    "crop_name": "training_ADE_train_00009473_t0_crop1",
    "source_image_id": "training_ADE_train_00009473",
    "source_transition": "training_ADE_train_00009473_t0",
-   "texture_a": "smooth turquoise water with steam rising",
-   "texture_b": "rough gray gravel with scattered stones",
+   "texture_a": "rough gray gravel with scattered stones",
+   "texture_b": "smooth turquoise water with steam rising",
    "crop_width": 595,
    "crop_height": 427,
    "refined_width": 595,
    "refined_height": 427,
    "scale_factor": 1,
    "balance": [
-    0.579,
-    0.381
+    0.381,
+    0.579
    ],
    "crop_score": 0.622124,
    "source_box": [
@@ -8836,16 +8836,16 @@
    "crop_name": "training_ADE_train_00009473_t0_crop2",
    "source_image_id": "training_ADE_train_00009473",
    "source_transition": "training_ADE_train_00009473_t0",
-   "texture_a": "smooth turquoise water with steam rising",
-   "texture_b": "rough gray gravel with scattered stones",
+   "texture_a": "rough gray gravel with scattered stones",
+   "texture_b": "smooth turquoise water with steam rising",
    "crop_width": 87,
    "crop_height": 256,
    "refined_width": 174,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.796,
-    0.164
+    0.164,
+    0.796
    ],
    "crop_score": 0.217168,
    "source_box": [
@@ -9052,16 +9052,16 @@
    "crop_name": "training_ADE_train_00009899_t0_crop0",
    "source_image_id": "training_ADE_train_00009899",
    "source_transition": "training_ADE_train_00009899_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "wet dark water with reflective surface",
+   "texture_a": "wet dark water with reflective surface",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 237,
    "crop_height": 72,
    "refined_width": 474,
    "refined_height": 144,
    "scale_factor": 2,
    "balance": [
-    0.502,
-    0.462
+    0.462,
+    0.502
    ],
    "crop_score": 1.144892,
    "source_box": [
@@ -9088,16 +9088,16 @@
    "crop_name": "training_ADE_train_00009899_t0_crop1",
    "source_image_id": "training_ADE_train_00009899",
    "source_transition": "training_ADE_train_00009899_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "wet dark water with reflective surface",
+   "texture_a": "wet dark water with reflective surface",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 121,
    "crop_height": 212,
    "refined_width": 242,
    "refined_height": 424,
    "scale_factor": 2,
    "balance": [
-    0.271,
-    0.703
+    0.703,
+    0.271
    ],
    "crop_score": 0.455604,
    "source_box": [
@@ -9124,16 +9124,16 @@
    "crop_name": "training_ADE_train_00009900_t0_crop0",
    "source_image_id": "training_ADE_train_00009900",
    "source_transition": "training_ADE_train_00009900_t0",
-   "texture_a": "dark reflective water surface with ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "dark reflective water surface with ripples",
    "crop_width": 608,
    "crop_height": 359,
    "refined_width": 608,
    "refined_height": 359,
    "scale_factor": 1,
    "balance": [
-    0.676,
-    0.29
+    0.29,
+    0.676
    ],
    "crop_score": 0.66465,
    "source_box": [
@@ -9160,16 +9160,16 @@
    "crop_name": "training_ADE_train_00009908_t0_crop0",
    "source_image_id": "training_ADE_train_00009908",
    "source_transition": "training_ADE_train_00009908_t0",
-   "texture_a": "dense green foliage with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green foliage with varied leaf shapes",
    "crop_width": 161,
    "crop_height": 64,
    "refined_width": 322,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.428,
-    0.46
+    0.46,
+    0.428
    ],
    "crop_score": 1.438011,
    "source_box": [
@@ -9304,16 +9304,16 @@
    "crop_name": "training_ADE_train_00010007_t0_crop0",
    "source_image_id": "training_ADE_train_00010007",
    "source_transition": "training_ADE_train_00010007_t0",
-   "texture_a": "dense green foliage with layered branches",
-   "texture_b": "smooth dark water surface with gentle ripples",
+   "texture_a": "smooth dark water surface with gentle ripples",
+   "texture_b": "dense green foliage with layered branches",
    "crop_width": 273,
    "crop_height": 213,
    "refined_width": 273,
    "refined_height": 213,
    "scale_factor": 1,
    "balance": [
-    0.558,
-    0.405
+    0.405,
+    0.558
    ],
    "crop_score": 0.196086,
    "source_box": [
@@ -9340,16 +9340,16 @@
    "crop_name": "training_ADE_train_00010007_t1_crop0",
    "source_image_id": "training_ADE_train_00010007",
    "source_transition": "training_ADE_train_00010007_t1",
-   "texture_a": "dense green foliage with layered branches",
-   "texture_b": "light beige gravel path with scattered stones",
+   "texture_a": "light beige gravel path with scattered stones",
+   "texture_b": "dense green foliage with layered branches",
    "crop_width": 103,
    "crop_height": 64,
    "refined_width": 206,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.628,
-    0.345
+    0.345,
+    0.628
    ],
    "crop_score": 1.57719,
    "source_box": [
@@ -9376,16 +9376,16 @@
    "crop_name": "training_ADE_train_00010007_t1_crop1",
    "source_image_id": "training_ADE_train_00010007",
    "source_transition": "training_ADE_train_00010007_t1",
-   "texture_a": "dense green foliage with layered branches",
-   "texture_b": "light beige gravel path with scattered stones",
+   "texture_a": "light beige gravel path with scattered stones",
+   "texture_b": "dense green foliage with layered branches",
    "crop_width": 96,
    "crop_height": 143,
    "refined_width": 192,
    "refined_height": 286,
    "scale_factor": 2,
    "balance": [
-    0.858,
-    0.12
+    0.12,
+    0.858
    ],
    "crop_score": 0.587796,
    "source_box": [
@@ -9448,16 +9448,16 @@
    "crop_name": "training_ADE_train_00010010_t1_crop0",
    "source_image_id": "training_ADE_train_00010010",
    "source_transition": "training_ADE_train_00010010_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 237,
    "crop_height": 320,
    "refined_width": 237,
    "refined_height": 320,
    "scale_factor": 1,
    "balance": [
-    0.318,
-    0.644
+    0.644,
+    0.318
    ],
    "crop_score": 0.302057,
    "source_box": [
@@ -9592,16 +9592,16 @@
    "crop_name": "training_ADE_train_00010788_t0_crop0",
    "source_image_id": "training_ADE_train_00010788",
    "source_transition": "training_ADE_train_00010788_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 155,
    "crop_height": 120,
    "refined_width": 310,
    "refined_height": 240,
    "scale_factor": 2,
    "balance": [
-    0.686,
-    0.309
+    0.309,
+    0.686
    ],
    "crop_score": 0.91277,
    "source_box": [
@@ -9628,16 +9628,16 @@
    "crop_name": "training_ADE_train_00010788_t0_crop1",
    "source_image_id": "training_ADE_train_00010788",
    "source_transition": "training_ADE_train_00010788_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 256,
    "crop_height": 184,
    "refined_width": 512,
    "refined_height": 368,
    "scale_factor": 2,
    "balance": [
-    0.646,
-    0.316
+    0.316,
+    0.646
    ],
    "crop_score": 0.682003,
    "source_box": [
@@ -9844,16 +9844,16 @@
    "crop_name": "training_ADE_train_00010790_t1_crop0",
    "source_image_id": "training_ADE_train_00010790",
    "source_transition": "training_ADE_train_00010790_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 123,
    "crop_height": 256,
    "refined_width": 246,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.587,
-    0.374
+    0.374,
+    0.587
    ],
    "crop_score": 0.431262,
    "source_box": [
@@ -10348,16 +10348,16 @@
    "crop_name": "training_ADE_train_00010817_t0_crop0",
    "source_image_id": "training_ADE_train_00010817",
    "source_transition": "training_ADE_train_00010817_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "calm reflective water surface with distant mountain reflection",
+   "texture_a": "calm reflective water surface with distant mountain reflection",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 145,
    "crop_height": 171,
    "refined_width": 290,
    "refined_height": 342,
    "scale_factor": 2,
    "balance": [
-    0.287,
-    0.687
+    0.687,
+    0.287
    ],
    "crop_score": 0.373412,
    "source_box": [
@@ -10492,16 +10492,16 @@
    "crop_name": "training_ADE_train_00010827_t0_crop0",
    "source_image_id": "training_ADE_train_00010827",
    "source_transition": "training_ADE_train_00010827_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "clear shallow water with visible submerged rocks",
+   "texture_a": "clear shallow water with visible submerged rocks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 64,
    "refined_width": 512,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.342,
-    0.637
+    0.637,
+    0.342
    ],
    "crop_score": 0.339499,
    "source_box": [
@@ -10600,16 +10600,16 @@
    "crop_name": "training_ADE_train_00010839_t0_crop0",
    "source_image_id": "training_ADE_train_00010839",
    "source_transition": "training_ADE_train_00010839_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth dark water surface with gentle ripples",
+   "texture_a": "smooth dark water surface with gentle ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 164,
    "crop_height": 134,
    "refined_width": 328,
    "refined_height": 268,
    "scale_factor": 2,
    "balance": [
-    0.364,
-    0.621
+    0.621,
+    0.364
    ],
    "crop_score": 0.696921,
    "source_box": [
@@ -10636,16 +10636,16 @@
    "crop_name": "training_ADE_train_00010839_t0_crop1",
    "source_image_id": "training_ADE_train_00010839",
    "source_transition": "training_ADE_train_00010839_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth dark water surface with gentle ripples",
+   "texture_a": "smooth dark water surface with gentle ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 74,
    "crop_height": 131,
    "refined_width": 148,
    "refined_height": 262,
    "scale_factor": 2,
    "balance": [
-    0.334,
-    0.661
+    0.661,
+    0.334
    ],
    "crop_score": 0.611861,
    "source_box": [
@@ -10816,16 +10816,16 @@
    "crop_name": "training_ADE_train_00010841_t0_crop0",
    "source_image_id": "training_ADE_train_00010841",
    "source_transition": "training_ADE_train_00010841_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "calm reflective water surface with mountain reflection",
+   "texture_a": "calm reflective water surface with mountain reflection",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 150,
    "crop_height": 152,
    "refined_width": 300,
    "refined_height": 304,
    "scale_factor": 2,
    "balance": [
-    0.477,
-    0.516
+    0.516,
+    0.477
    ],
    "crop_score": 1.073228,
    "source_box": [
@@ -10888,16 +10888,16 @@
    "crop_name": "training_ADE_train_00011021_t0_crop0",
    "source_image_id": "training_ADE_train_00011021",
    "source_transition": "training_ADE_train_00011021_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 114,
    "crop_height": 64,
    "refined_width": 228,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.5,
-    0.318
+    0.318,
+    0.5
    ],
    "crop_score": 1.451019,
    "source_box": [
@@ -10924,16 +10924,16 @@
    "crop_name": "training_ADE_train_00011021_t2_crop0",
    "source_image_id": "training_ADE_train_00011021",
    "source_transition": "training_ADE_train_00011021_t2",
-   "texture_a": "dark textured rock face with vertical striations",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dark textured rock face with vertical striations",
    "crop_width": 110,
    "crop_height": 113,
    "refined_width": 220,
    "refined_height": 226,
    "scale_factor": 2,
    "balance": [
-    0.498,
-    0.384
+    0.384,
+    0.498
    ],
    "crop_score": 1.369198,
    "source_box": [
@@ -10960,16 +10960,16 @@
    "crop_name": "training_ADE_train_00011021_t2_crop1",
    "source_image_id": "training_ADE_train_00011021",
    "source_transition": "training_ADE_train_00011021_t2",
-   "texture_a": "dark textured rock face with vertical striations",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dark textured rock face with vertical striations",
    "crop_width": 256,
    "crop_height": 184,
    "refined_width": 512,
    "refined_height": 368,
    "scale_factor": 2,
    "balance": [
-    0.348,
-    0.621
+    0.621,
+    0.348
    ],
    "crop_score": 0.331824,
    "source_box": [
@@ -10996,16 +10996,16 @@
    "crop_name": "training_ADE_train_00011021_t4_crop0",
    "source_image_id": "training_ADE_train_00011021",
    "source_transition": "training_ADE_train_00011021_t4",
-   "texture_a": "blue water surface with gentle ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "blue water surface with gentle ripples",
    "crop_width": 686,
    "crop_height": 256,
    "refined_width": 686,
    "refined_height": 256,
    "scale_factor": 1,
    "balance": [
-    0.307,
-    0.656
+    0.656,
+    0.307
    ],
    "crop_score": 0.89276,
    "source_box": [
@@ -11032,16 +11032,16 @@
    "crop_name": "training_ADE_train_00011021_t4_crop1",
    "source_image_id": "training_ADE_train_00011021",
    "source_transition": "training_ADE_train_00011021_t4",
-   "texture_a": "blue water surface with gentle ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "blue water surface with gentle ripples",
    "crop_width": 108,
    "crop_height": 182,
    "refined_width": 216,
    "refined_height": 364,
    "scale_factor": 2,
    "balance": [
-    0.589,
-    0.382
+    0.382,
+    0.589
    ],
    "crop_score": 0.533727,
    "source_box": [
@@ -11068,16 +11068,16 @@
    "crop_name": "training_ADE_train_00011021_t4_crop2",
    "source_image_id": "training_ADE_train_00011021",
    "source_transition": "training_ADE_train_00011021_t4",
-   "texture_a": "blue water surface with gentle ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "blue water surface with gentle ripples",
    "crop_width": 103,
    "crop_height": 144,
    "refined_width": 206,
    "refined_height": 288,
    "scale_factor": 2,
    "balance": [
-    0.318,
-    0.675
+    0.675,
+    0.318
    ],
    "crop_score": 0.433778,
    "source_box": [
@@ -11104,16 +11104,16 @@
    "crop_name": "training_ADE_train_00011024_t0_crop0",
    "source_image_id": "training_ADE_train_00011024",
    "source_transition": "training_ADE_train_00011024_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 110,
    "crop_height": 64,
    "refined_width": 220,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.483,
-    0.457
+    0.457,
+    0.483
    ],
    "crop_score": 1.334497,
    "source_box": [
@@ -11140,16 +11140,16 @@
    "crop_name": "training_ADE_train_00011024_t0_crop1",
    "source_image_id": "training_ADE_train_00011024",
    "source_transition": "training_ADE_train_00011024_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 505,
    "crop_height": 252,
    "refined_width": 505,
    "refined_height": 252,
    "scale_factor": 1,
    "balance": [
-    0.333,
-    0.619
+    0.619,
+    0.333
    ],
    "crop_score": 0.782924,
    "source_box": [
@@ -11176,16 +11176,16 @@
    "crop_name": "training_ADE_train_00011040_t0_crop0",
    "source_image_id": "training_ADE_train_00011040",
    "source_transition": "training_ADE_train_00011040_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "dry sandy ground with sparse vegetation",
+   "texture_a": "dry sandy ground with sparse vegetation",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 197,
    "crop_height": 104,
    "refined_width": 394,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.158,
-    0.829
+    0.829,
+    0.158
    ],
    "crop_score": 0.29781,
    "source_box": [
@@ -11212,16 +11212,16 @@
    "crop_name": "training_ADE_train_00011040_t1_crop0",
    "source_image_id": "training_ADE_train_00011040",
    "source_transition": "training_ADE_train_00011040_t1",
-   "texture_a": "dry sandy ground with sparse vegetation",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dry sandy ground with sparse vegetation",
    "crop_width": 112,
    "crop_height": 256,
    "refined_width": 224,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.716,
-    0.25
+    0.25,
+    0.716
    ],
    "crop_score": 1.375869,
    "source_box": [
@@ -11356,16 +11356,16 @@
    "crop_name": "training_ADE_train_00011755_t0_crop0",
    "source_image_id": "training_ADE_train_00011755",
    "source_transition": "training_ADE_train_00011755_t0",
-   "texture_a": "weathered mossy stone with lichen patches",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "weathered mossy stone with lichen patches",
    "crop_width": 231,
    "crop_height": 178,
    "refined_width": 462,
    "refined_height": 356,
    "scale_factor": 2,
    "balance": [
-    0.665,
-    0.287
+    0.287,
+    0.665
    ],
    "crop_score": 0.421285,
    "source_box": [
@@ -11392,16 +11392,16 @@
    "crop_name": "training_ADE_train_00011755_t1_crop0",
    "source_image_id": "training_ADE_train_00011755",
    "source_transition": "training_ADE_train_00011755_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "calm reflective water surface",
+   "texture_a": "calm reflective water surface",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 165,
    "crop_height": 90,
    "refined_width": 330,
    "refined_height": 180,
    "scale_factor": 2,
    "balance": [
-    0.247,
-    0.736
+    0.736,
+    0.247
    ],
    "crop_score": 0.386611,
    "source_box": [
@@ -12220,16 +12220,16 @@
    "crop_name": "training_ADE_train_00011962_t0_crop0",
    "source_image_id": "training_ADE_train_00011962",
    "source_transition": "training_ADE_train_00011962_t0",
-   "texture_a": "dark mossy rock face with vertical striations",
-   "texture_b": "green grassy slope with scattered shadows",
+   "texture_a": "green grassy slope with scattered shadows",
+   "texture_b": "dark mossy rock face with vertical striations",
    "crop_width": 143,
    "crop_height": 64,
    "refined_width": 286,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.486,
-    0.419
+    0.419,
+    0.486
    ],
    "crop_score": 1.435036,
    "source_box": [
@@ -12256,16 +12256,16 @@
    "crop_name": "training_ADE_train_00011962_t0_crop1",
    "source_image_id": "training_ADE_train_00011962",
    "source_transition": "training_ADE_train_00011962_t0",
-   "texture_a": "dark mossy rock face with vertical striations",
-   "texture_b": "green grassy slope with scattered shadows",
+   "texture_a": "green grassy slope with scattered shadows",
+   "texture_b": "dark mossy rock face with vertical striations",
    "crop_width": 228,
    "crop_height": 104,
    "refined_width": 456,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.804,
-    0.172
+    0.172,
+    0.804
    ],
    "crop_score": 0.896259,
    "source_box": [
@@ -12364,16 +12364,16 @@
    "crop_name": "training_ADE_train_00011983_t0_crop0",
    "source_image_id": "training_ADE_train_00011983",
    "source_transition": "training_ADE_train_00011983_t0",
-   "texture_a": "rough gray rock face with vertical striations",
-   "texture_b": "dense dark green coniferous forest",
+   "texture_a": "dense dark green coniferous forest",
+   "texture_b": "rough gray rock face with vertical striations",
    "crop_width": 211,
    "crop_height": 138,
    "refined_width": 422,
    "refined_height": 276,
    "scale_factor": 2,
    "balance": [
-    0.699,
-    0.281
+    0.281,
+    0.699
    ],
    "crop_score": 0.36802,
    "source_box": [
@@ -12580,16 +12580,16 @@
    "crop_name": "training_ADE_train_00012007_t0_crop0",
    "source_image_id": "training_ADE_train_00012007",
    "source_transition": "training_ADE_train_00012007_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 92,
    "crop_height": 144,
    "refined_width": 184,
    "refined_height": 288,
    "scale_factor": 2,
    "balance": [
-    0.3,
-    0.69
+    0.69,
+    0.3
    ],
    "crop_score": 0.648732,
    "source_box": [
@@ -12616,16 +12616,16 @@
    "crop_name": "training_ADE_train_00012007_t0_crop1",
    "source_image_id": "training_ADE_train_00012007",
    "source_transition": "training_ADE_train_00012007_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 184,
    "crop_height": 193,
    "refined_width": 368,
    "refined_height": 386,
    "scale_factor": 2,
    "balance": [
-    0.574,
-    0.398
+    0.398,
+    0.574
    ],
    "crop_score": 0.240837,
    "source_box": [
@@ -12688,16 +12688,16 @@
    "crop_name": "training_ADE_train_00012040_t0_crop0",
    "source_image_id": "training_ADE_train_00012040",
    "source_transition": "training_ADE_train_00012040_t0",
-   "texture_a": "smooth asphalt road with double yellow lines",
-   "texture_b": "dry sparse shrubbery with green foliage",
+   "texture_a": "dry sparse shrubbery with green foliage",
+   "texture_b": "smooth asphalt road with double yellow lines",
    "crop_width": 157,
    "crop_height": 64,
    "refined_width": 314,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.463,
-    0.437
+    0.437,
+    0.463
    ],
    "crop_score": 1.424575,
    "source_box": [
@@ -12940,16 +12940,16 @@
    "crop_name": "training_ADE_train_00012069_t0_crop0",
    "source_image_id": "training_ADE_train_00012069",
    "source_transition": "training_ADE_train_00012069_t0",
-   "texture_a": "snow-covered mountain peak with sharp ridges",
-   "texture_b": "dense green vegetation with scattered red flowers",
+   "texture_a": "dense green vegetation with scattered red flowers",
+   "texture_b": "snow-covered mountain peak with sharp ridges",
    "crop_width": 64,
    "crop_height": 218,
    "refined_width": 128,
    "refined_height": 436,
    "scale_factor": 2,
    "balance": [
-    0.588,
-    0.38
+    0.38,
+    0.588
    ],
    "crop_score": 0.350366,
    "source_box": [
@@ -13084,16 +13084,16 @@
    "crop_name": "training_ADE_train_00012138_t0_crop0",
    "source_image_id": "training_ADE_train_00012138",
    "source_transition": "training_ADE_train_00012138_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 132,
    "crop_height": 160,
    "refined_width": 264,
    "refined_height": 320,
    "scale_factor": 2,
    "balance": [
-    0.626,
-    0.364
+    0.364,
+    0.626
    ],
    "crop_score": 0.476747,
    "source_box": [
@@ -13444,16 +13444,16 @@
    "crop_name": "training_ADE_train_00012451_t0_crop0",
    "source_image_id": "training_ADE_train_00012451",
    "source_transition": "training_ADE_train_00012451_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "worn gray gravel path with tire marks",
+   "texture_a": "worn gray gravel path with tire marks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 71,
    "crop_height": 256,
    "refined_width": 142,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.588,
-    0.392
+    0.392,
+    0.588
    ],
    "crop_score": 0.378532,
    "source_box": [
@@ -14200,16 +14200,16 @@
    "crop_name": "training_ADE_train_00012950_t1_crop0",
    "source_image_id": "training_ADE_train_00012950",
    "source_transition": "training_ADE_train_00012950_t1",
-   "texture_a": "green grass with scattered shadows",
-   "texture_b": "pale limestone blocks with dark mortar joints",
+   "texture_a": "pale limestone blocks with dark mortar joints",
+   "texture_b": "green grass with scattered shadows",
    "crop_width": 197,
    "crop_height": 64,
    "refined_width": 394,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.425,
-    0.535
+    0.535,
+    0.425
    ],
    "crop_score": 1.666666,
    "source_box": [
@@ -14236,16 +14236,16 @@
    "crop_name": "training_ADE_train_00012950_t1_crop1",
    "source_image_id": "training_ADE_train_00012950",
    "source_transition": "training_ADE_train_00012950_t1",
-   "texture_a": "green grass with scattered shadows",
-   "texture_b": "pale limestone blocks with dark mortar joints",
+   "texture_a": "pale limestone blocks with dark mortar joints",
+   "texture_b": "green grass with scattered shadows",
    "crop_width": 112,
    "crop_height": 160,
    "refined_width": 224,
    "refined_height": 320,
    "scale_factor": 2,
    "balance": [
-    0.275,
-    0.704
+    0.704,
+    0.275
    ],
    "crop_score": 0.655214,
    "source_box": [
@@ -14308,16 +14308,16 @@
    "crop_name": "training_ADE_train_00013067_t0_crop0",
    "source_image_id": "training_ADE_train_00013067",
    "source_transition": "training_ADE_train_00013067_t0",
-   "texture_a": "smooth dark asphalt with white lane markings",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth dark asphalt with white lane markings",
    "crop_width": 79,
    "crop_height": 152,
    "refined_width": 158,
    "refined_height": 304,
    "scale_factor": 2,
    "balance": [
-    0.379,
-    0.604
+    0.604,
+    0.379
    ],
    "crop_score": 0.699925,
    "source_box": [
@@ -14344,16 +14344,16 @@
    "crop_name": "training_ADE_train_00013067_t0_crop1",
    "source_image_id": "training_ADE_train_00013067",
    "source_transition": "training_ADE_train_00013067_t0",
-   "texture_a": "smooth dark asphalt with white lane markings",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth dark asphalt with white lane markings",
    "crop_width": 293,
    "crop_height": 241,
    "refined_width": 293,
    "refined_height": 241,
    "scale_factor": 1,
    "balance": [
-    0.419,
-    0.577
+    0.577,
+    0.419
    ],
    "crop_score": 0.663596,
    "source_box": [
@@ -14380,16 +14380,16 @@
    "crop_name": "training_ADE_train_00013067_t0_crop2",
    "source_image_id": "training_ADE_train_00013067",
    "source_transition": "training_ADE_train_00013067_t0",
-   "texture_a": "smooth dark asphalt with white lane markings",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth dark asphalt with white lane markings",
    "crop_width": 242,
    "crop_height": 314,
    "refined_width": 242,
    "refined_height": 314,
    "scale_factor": 1,
    "balance": [
-    0.245,
-    0.719
+    0.719,
+    0.245
    ],
    "crop_score": 0.459149,
    "source_box": [
@@ -14416,16 +14416,16 @@
    "crop_name": "training_ADE_train_00013067_t0_crop3",
    "source_image_id": "training_ADE_train_00013067",
    "source_transition": "training_ADE_train_00013067_t0",
-   "texture_a": "smooth dark asphalt with white lane markings",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth dark asphalt with white lane markings",
    "crop_width": 256,
    "crop_height": 172,
    "refined_width": 512,
    "refined_height": 344,
    "scale_factor": 2,
    "balance": [
-    0.449,
-    0.531
+    0.531,
+    0.449
    ],
    "crop_score": 0.243742,
    "source_box": [
@@ -14488,16 +14488,16 @@
    "crop_name": "training_ADE_train_00013149_t0_crop0",
    "source_image_id": "training_ADE_train_00013149",
    "source_transition": "training_ADE_train_00013149_t0",
-   "texture_a": "rough reddish-brown sandstone with horizontal striations",
-   "texture_b": "dense green vegetation with scattered shadows",
+   "texture_a": "dense green vegetation with scattered shadows",
+   "texture_b": "rough reddish-brown sandstone with horizontal striations",
    "crop_width": 493,
    "crop_height": 316,
    "refined_width": 493,
    "refined_height": 316,
    "scale_factor": 1,
    "balance": [
-    0.314,
-    0.654
+    0.654,
+    0.314
    ],
    "crop_score": 1.729832,
    "source_box": [
@@ -14524,16 +14524,16 @@
    "crop_name": "training_ADE_train_00013165_t0_crop0",
    "source_image_id": "training_ADE_train_00013165",
    "source_transition": "training_ADE_train_00013165_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "dark calm water with floating lily pads",
+   "texture_a": "dark calm water with floating lily pads",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 220,
    "crop_height": 233,
    "refined_width": 220,
    "refined_height": 233,
    "scale_factor": 1,
    "balance": [
-    0.566,
-    0.402
+    0.402,
+    0.566
    ],
    "crop_score": 1.175774,
    "source_box": [
@@ -14560,16 +14560,16 @@
    "crop_name": "training_ADE_train_00013165_t0_crop1",
    "source_image_id": "training_ADE_train_00013165",
    "source_transition": "training_ADE_train_00013165_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "dark calm water with floating lily pads",
+   "texture_a": "dark calm water with floating lily pads",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 113,
    "crop_height": 120,
    "refined_width": 226,
    "refined_height": 240,
    "scale_factor": 2,
    "balance": [
-    0.484,
-    0.496
+    0.496,
+    0.484
    ],
    "crop_score": 0.521252,
    "source_box": [
@@ -14740,16 +14740,16 @@
    "crop_name": "training_ADE_train_00013297_t0_crop0",
    "source_image_id": "training_ADE_train_00013297",
    "source_transition": "training_ADE_train_00013297_t0",
-   "texture_a": "rough red sandstone with layered striations",
-   "texture_b": "dense green foliage with varied leaf shapes",
+   "texture_a": "dense green foliage with varied leaf shapes",
+   "texture_b": "rough red sandstone with layered striations",
    "crop_width": 64,
    "crop_height": 104,
    "refined_width": 128,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.73,
-    0.258
+    0.258,
+    0.73
    ],
    "crop_score": 0.509367,
    "source_box": [
@@ -14776,16 +14776,16 @@
    "crop_name": "training_ADE_train_00013297_t0_crop1",
    "source_image_id": "training_ADE_train_00013297",
    "source_transition": "training_ADE_train_00013297_t0",
-   "texture_a": "rough red sandstone with layered striations",
-   "texture_b": "dense green foliage with varied leaf shapes",
+   "texture_a": "dense green foliage with varied leaf shapes",
+   "texture_b": "rough red sandstone with layered striations",
    "crop_width": 133,
    "crop_height": 104,
    "refined_width": 266,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.743,
-    0.249
+    0.249,
+    0.743
    ],
    "crop_score": 0.371556,
    "source_box": [
@@ -14812,16 +14812,16 @@
    "crop_name": "training_ADE_train_00013386_t2_crop0",
    "source_image_id": "training_ADE_train_00013386",
    "source_transition": "training_ADE_train_00013386_t2",
-   "texture_a": "light tan sand with fine granular texture",
-   "texture_b": "dense green vegetation with scattered shadows",
+   "texture_a": "dense green vegetation with scattered shadows",
+   "texture_b": "calm blue water with gentle ripples",
    "crop_width": 171,
    "crop_height": 112,
    "refined_width": 342,
    "refined_height": 224,
    "scale_factor": 2,
    "balance": [
-    0.723,
-    0.27
+    0.27,
+    0.723
    ],
    "crop_score": 0.55597,
    "source_box": [
@@ -14848,16 +14848,16 @@
    "crop_name": "training_ADE_train_00013415_t0_crop0",
    "source_image_id": "training_ADE_train_00013415",
    "source_transition": "training_ADE_train_00013415_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 176,
    "refined_width": 512,
    "refined_height": 352,
    "scale_factor": 2,
    "balance": [
-    0.392,
-    0.607
+    0.607,
+    0.392
    ],
    "crop_score": 0.697791,
    "source_box": [
@@ -14884,16 +14884,16 @@
    "crop_name": "training_ADE_train_00013415_t0_crop1",
    "source_image_id": "training_ADE_train_00013415",
    "source_transition": "training_ADE_train_00013415_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 104,
    "refined_width": 512,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.377,
-    0.622
+    0.622,
+    0.377
    ],
    "crop_score": 0.198303,
    "source_box": [
@@ -15028,16 +15028,16 @@
    "crop_name": "training_ADE_train_00013543_t0_crop0",
    "source_image_id": "training_ADE_train_00013543",
    "source_transition": "training_ADE_train_00013543_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 98,
    "crop_height": 256,
    "refined_width": 196,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.624,
-    0.367
+    0.367,
+    0.624
    ],
    "crop_score": 0.22623,
    "source_box": [
@@ -15244,16 +15244,16 @@
    "crop_name": "training_ADE_train_00013758_t0_crop0",
    "source_image_id": "training_ADE_train_00013758",
    "source_transition": "training_ADE_train_00013758_t0",
-   "texture_a": "dense green foliage with varied leaf shapes",
-   "texture_b": "smooth gray asphalt with white painted lines",
+   "texture_a": "smooth gray asphalt with white painted lines",
+   "texture_b": "dense green foliage with varied leaf shapes",
    "crop_width": 502,
    "crop_height": 428,
    "refined_width": 502,
    "refined_height": 428,
    "scale_factor": 1,
    "balance": [
-    0.261,
-    0.697
+    0.697,
+    0.261
    ],
    "crop_score": 0.70313,
    "source_box": [
@@ -15316,16 +15316,16 @@
    "crop_name": "training_ADE_train_00013943_t2_crop0",
    "source_image_id": "training_ADE_train_00013943",
    "source_transition": "training_ADE_train_00013943_t2",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 124,
    "crop_height": 92,
    "refined_width": 248,
    "refined_height": 184,
    "scale_factor": 2,
    "balance": [
-    0.527,
-    0.468
+    0.468,
+    0.527
    ],
    "crop_score": 0.376499,
    "source_box": [
@@ -15353,7 +15353,7 @@
    "source_image_id": "training_ADE_train_00013995",
    "source_transition": "training_ADE_train_00013995_t0",
    "texture_a": "wet sandy beach with ripple patterns",
-   "texture_b": "calm ocean water with golden reflection",
+   "texture_b": "warm sandy ground with fine texture",
    "crop_width": 256,
    "crop_height": 124,
    "refined_width": 512,
@@ -15676,7 +15676,7 @@
    "crop_name": "training_ADE_train_00014167_t0_crop0",
    "source_image_id": "training_ADE_train_00014167",
    "source_transition": "training_ADE_train_00014167_t0",
-   "texture_a": "dry brown grass with sparse green patches",
+   "texture_a": "reddish-brown earth with dry surface",
    "texture_b": "bare tree branches with gnarled bark",
    "crop_width": 128,
    "crop_height": 64,
@@ -15712,7 +15712,7 @@
    "crop_name": "training_ADE_train_00014167_t0_crop1",
    "source_image_id": "training_ADE_train_00014167",
    "source_transition": "training_ADE_train_00014167_t0",
-   "texture_a": "dry brown grass with sparse green patches",
+   "texture_a": "reddish-brown earth with dry surface",
    "texture_b": "bare tree branches with gnarled bark",
    "crop_width": 71,
    "crop_height": 144,
@@ -15748,7 +15748,7 @@
    "crop_name": "training_ADE_train_00014167_t0_crop2",
    "source_image_id": "training_ADE_train_00014167",
    "source_transition": "training_ADE_train_00014167_t0",
-   "texture_a": "dry brown grass with sparse green patches",
+   "texture_a": "reddish-brown earth with dry surface",
    "texture_b": "bare tree branches with gnarled bark",
    "crop_width": 121,
    "crop_height": 64,
@@ -15784,7 +15784,7 @@
    "crop_name": "training_ADE_train_00014167_t0_crop3",
    "source_image_id": "training_ADE_train_00014167",
    "source_transition": "training_ADE_train_00014167_t0",
-   "texture_a": "dry brown grass with sparse green patches",
+   "texture_a": "reddish-brown earth with dry surface",
    "texture_b": "bare tree branches with gnarled bark",
    "crop_width": 104,
    "crop_height": 256,
@@ -15964,16 +15964,16 @@
    "crop_name": "training_ADE_train_00014240_t1_crop0",
    "source_image_id": "training_ADE_train_00014240",
    "source_transition": "training_ADE_train_00014240_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green vegetation with varied leaf shapes",
+   "texture_a": "dense green vegetation with varied leaf shapes",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 64,
    "crop_height": 104,
    "refined_width": 128,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.73,
-    0.258
+    0.258,
+    0.73
    ],
    "crop_score": 0.748713,
    "source_box": [
@@ -16000,16 +16000,16 @@
    "crop_name": "training_ADE_train_00014240_t1_crop1",
    "source_image_id": "training_ADE_train_00014240",
    "source_transition": "training_ADE_train_00014240_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green vegetation with varied leaf shapes",
+   "texture_a": "dense green vegetation with varied leaf shapes",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 103,
    "crop_height": 104,
    "refined_width": 206,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.652,
-    0.342
+    0.342,
+    0.652
    ],
    "crop_score": 0.576117,
    "source_box": [
@@ -16036,16 +16036,16 @@
    "crop_name": "training_ADE_train_00014240_t1_crop2",
    "source_image_id": "training_ADE_train_00014240",
    "source_transition": "training_ADE_train_00014240_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green vegetation with varied leaf shapes",
+   "texture_a": "dense green vegetation with varied leaf shapes",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 213,
    "crop_height": 188,
    "refined_width": 426,
    "refined_height": 376,
    "scale_factor": 2,
    "balance": [
-    0.591,
-    0.381
+    0.381,
+    0.591
    ],
    "crop_score": 0.401201,
    "source_box": [
@@ -16072,16 +16072,16 @@
    "crop_name": "training_ADE_train_00014240_t1_crop3",
    "source_image_id": "training_ADE_train_00014240",
    "source_transition": "training_ADE_train_00014240_t1",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "dense green vegetation with varied leaf shapes",
+   "texture_a": "dense green vegetation with varied leaf shapes",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 443,
    "crop_height": 220,
    "refined_width": 443,
    "refined_height": 220,
    "scale_factor": 1,
    "balance": [
-    0.654,
-    0.319
+    0.319,
+    0.654
    ],
    "crop_score": 0.238726,
    "source_box": [
@@ -16180,16 +16180,16 @@
    "crop_name": "training_ADE_train_00014243_t1_crop0",
    "source_image_id": "training_ADE_train_00014243",
    "source_transition": "training_ADE_train_00014243_t1",
-   "texture_a": "dense green forest with varied canopy",
-   "texture_b": "brown earthy path with visible gravel",
+   "texture_a": "brown earthy path with visible gravel",
+   "texture_b": "dense green forest with varied canopy",
    "crop_width": 107,
    "crop_height": 64,
    "refined_width": 214,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.509,
-    0.46
+    0.46,
+    0.509
    ],
    "crop_score": 1.292654,
    "source_box": [
@@ -16216,16 +16216,16 @@
    "crop_name": "training_ADE_train_00014245_t0_crop0",
    "source_image_id": "training_ADE_train_00014245",
    "source_transition": "training_ADE_train_00014245_t0",
-   "texture_a": "dense green vegetation with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green vegetation with varied leaf shapes",
    "crop_width": 96,
    "crop_height": 104,
    "refined_width": 192,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.302,
-    0.687
+    0.687,
+    0.302
    ],
    "crop_score": 3.143643,
    "source_box": [
@@ -16252,16 +16252,16 @@
    "crop_name": "training_ADE_train_00014245_t0_crop1",
    "source_image_id": "training_ADE_train_00014245",
    "source_transition": "training_ADE_train_00014245_t0",
-   "texture_a": "dense green vegetation with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green vegetation with varied leaf shapes",
    "crop_width": 256,
    "crop_height": 152,
    "refined_width": 512,
    "refined_height": 304,
    "scale_factor": 2,
    "balance": [
-    0.573,
-    0.395
+    0.395,
+    0.573
    ],
    "crop_score": 0.610802,
    "source_box": [
@@ -16684,16 +16684,16 @@
    "crop_name": "training_ADE_train_00014530_t0_crop0",
    "source_image_id": "training_ADE_train_00014530",
    "source_transition": "training_ADE_train_00014530_t0",
-   "texture_a": "smooth white snow with soft undulating surface",
-   "texture_b": "dark green coniferous tree needles",
+   "texture_a": "dark green coniferous tree needles",
+   "texture_b": "smooth white snow with soft undulating surface",
    "crop_width": 224,
    "crop_height": 277,
    "refined_width": 224,
    "refined_height": 277,
    "scale_factor": 1,
    "balance": [
-    0.429,
-    0.533
+    0.533,
+    0.429
    ],
    "crop_score": 0.752431,
    "source_box": [
@@ -16720,16 +16720,16 @@
    "crop_name": "training_ADE_train_00014530_t0_crop1",
    "source_image_id": "training_ADE_train_00014530",
    "source_transition": "training_ADE_train_00014530_t0",
-   "texture_a": "smooth white snow with soft undulating surface",
-   "texture_b": "dark green coniferous tree needles",
+   "texture_a": "dark green coniferous tree needles",
+   "texture_b": "smooth white snow with soft undulating surface",
    "crop_width": 104,
    "crop_height": 256,
    "refined_width": 208,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.665,
-    0.321
+    0.321,
+    0.665
    ],
    "crop_score": 0.246224,
    "source_box": [
@@ -16828,16 +16828,16 @@
    "crop_name": "training_ADE_train_00014668_t2_crop0",
    "source_image_id": "training_ADE_train_00014668",
    "source_transition": "training_ADE_train_00014668_t2",
-   "texture_a": "dense green shrubbery with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green shrubbery with varied leaf shapes",
    "crop_width": 97,
    "crop_height": 64,
    "refined_width": 194,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.494,
-    0.471
+    0.471,
+    0.494
    ],
    "crop_score": 1.067015,
    "source_box": [
@@ -16864,16 +16864,16 @@
    "crop_name": "training_ADE_train_00014668_t2_crop1",
    "source_image_id": "training_ADE_train_00014668",
    "source_transition": "training_ADE_train_00014668_t2",
-   "texture_a": "dense green shrubbery with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green shrubbery with varied leaf shapes",
    "crop_width": 244,
    "crop_height": 132,
    "refined_width": 488,
    "refined_height": 264,
    "scale_factor": 2,
    "balance": [
-    0.699,
-    0.291
+    0.291,
+    0.699
    ],
    "crop_score": 0.579729,
    "source_box": [
@@ -16900,16 +16900,16 @@
    "crop_name": "training_ADE_train_00014668_t2_crop2",
    "source_image_id": "training_ADE_train_00014668",
    "source_transition": "training_ADE_train_00014668_t2",
-   "texture_a": "dense green shrubbery with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green shrubbery with varied leaf shapes",
    "crop_width": 147,
    "crop_height": 144,
    "refined_width": 294,
    "refined_height": 288,
    "scale_factor": 2,
    "balance": [
-    0.642,
-    0.338
+    0.338,
+    0.642
    ],
    "crop_score": 0.411702,
    "source_box": [
@@ -16936,16 +16936,16 @@
    "crop_name": "training_ADE_train_00014668_t2_crop3",
    "source_image_id": "training_ADE_train_00014668",
    "source_transition": "training_ADE_train_00014668_t2",
-   "texture_a": "dense green shrubbery with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green shrubbery with varied leaf shapes",
    "crop_width": 155,
    "crop_height": 144,
    "refined_width": 310,
    "refined_height": 288,
    "scale_factor": 2,
    "balance": [
-    0.614,
-    0.385
+    0.385,
+    0.614
    ],
    "crop_score": 0.295465,
    "source_box": [
@@ -16972,16 +16972,16 @@
    "crop_name": "training_ADE_train_00014668_t2_crop4",
    "source_image_id": "training_ADE_train_00014668",
    "source_transition": "training_ADE_train_00014668_t2",
-   "texture_a": "dense green shrubbery with varied leaf shapes",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green shrubbery with varied leaf shapes",
    "crop_width": 216,
    "crop_height": 180,
    "refined_width": 432,
    "refined_height": 360,
    "scale_factor": 2,
    "balance": [
-    0.586,
-    0.388
+    0.388,
+    0.586
    ],
    "crop_score": 0.223357,
    "source_box": [
@@ -17368,16 +17368,16 @@
    "crop_name": "training_ADE_train_00014924_t0_crop0",
    "source_image_id": "training_ADE_train_00014924",
    "source_transition": "training_ADE_train_00014924_t0",
-   "texture_a": "dark wet river water with gentle ripples",
-   "texture_b": "damp brownish grassy marshland with scattered reeds",
+   "texture_a": "damp brownish grassy marshland with scattered reeds",
+   "texture_b": "dark wet river water with gentle ripples",
    "crop_width": 256,
    "crop_height": 112,
    "refined_width": 512,
    "refined_height": 224,
    "scale_factor": 2,
    "balance": [
-    0.465,
-    0.535
+    0.535,
+    0.465
    ],
    "crop_score": 0.8527,
    "source_box": [
@@ -17404,16 +17404,16 @@
    "crop_name": "training_ADE_train_00014924_t0_crop1",
    "source_image_id": "training_ADE_train_00014924",
    "source_transition": "training_ADE_train_00014924_t0",
-   "texture_a": "dark wet river water with gentle ripples",
-   "texture_b": "damp brownish grassy marshland with scattered reeds",
+   "texture_a": "damp brownish grassy marshland with scattered reeds",
+   "texture_b": "dark wet river water with gentle ripples",
    "crop_width": 604,
    "crop_height": 373,
    "refined_width": 604,
    "refined_height": 373,
    "scale_factor": 1,
    "balance": [
-    0.483,
-    0.474
+    0.474,
+    0.483
    ],
    "crop_score": 0.37554,
    "source_box": [
@@ -17692,16 +17692,16 @@
    "crop_name": "training_ADE_train_00014935_t1_crop0",
    "source_image_id": "training_ADE_train_00014935",
    "source_transition": "training_ADE_train_00014935_t1",
-   "texture_a": "wet sandy shore with fine granular texture",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "wet sandy shore with fine granular texture",
    "crop_width": 800,
    "crop_height": 202,
    "refined_width": 800,
    "refined_height": 202,
    "scale_factor": 1,
    "balance": [
-    0.627,
-    0.346
+    0.346,
+    0.627
    ],
    "crop_score": 2.175692,
    "source_box": [
@@ -17728,16 +17728,16 @@
    "crop_name": "training_ADE_train_00015008_t0_crop0",
    "source_image_id": "training_ADE_train_00015008",
    "source_transition": "training_ADE_train_00015008_t0",
-   "texture_a": "smooth gray concrete path with subtle wear",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth gray concrete path with subtle wear",
    "crop_width": 111,
    "crop_height": 256,
    "refined_width": 222,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.297,
-    0.702
+    0.702,
+    0.297
    ],
    "crop_score": 0.424934,
    "source_box": [
@@ -17764,16 +17764,16 @@
    "crop_name": "training_ADE_train_00015008_t0_crop1",
    "source_image_id": "training_ADE_train_00015008",
    "source_transition": "training_ADE_train_00015008_t0",
-   "texture_a": "smooth gray concrete path with subtle wear",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth gray concrete path with subtle wear",
    "crop_width": 683,
    "crop_height": 339,
    "refined_width": 683,
    "refined_height": 339,
    "scale_factor": 1,
    "balance": [
-    0.483,
-    0.479
+    0.479,
+    0.483
    ],
    "crop_score": 0.352608,
    "source_box": [
@@ -17800,16 +17800,16 @@
    "crop_name": "training_ADE_train_00015008_t0_crop2",
    "source_image_id": "training_ADE_train_00015008",
    "source_transition": "training_ADE_train_00015008_t0",
-   "texture_a": "smooth gray concrete path with subtle wear",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "smooth gray concrete path with subtle wear",
    "crop_width": 207,
    "crop_height": 309,
    "refined_width": 207,
    "refined_height": 309,
    "scale_factor": 1,
    "balance": [
-    0.625,
-    0.363
+    0.363,
+    0.625
    ],
    "crop_score": 0.234971,
    "source_box": [
@@ -18088,16 +18088,16 @@
    "crop_name": "training_ADE_train_00015075_t0_crop0",
    "source_image_id": "training_ADE_train_00015075",
    "source_transition": "training_ADE_train_00015075_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "dark brown mulch with fine organic particles",
+   "texture_a": "dark brown mulch with fine organic particles",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 190,
    "crop_height": 181,
    "refined_width": 380,
    "refined_height": 362,
    "scale_factor": 2,
    "balance": [
-    0.585,
-    0.375
+    0.375,
+    0.585
    ],
    "crop_score": 0.64339,
    "source_box": [
@@ -18124,16 +18124,16 @@
    "crop_name": "training_ADE_train_00015077_t0_crop0",
    "source_image_id": "training_ADE_train_00015077",
    "source_transition": "training_ADE_train_00015077_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "light brown gravel path with scattered stones",
+   "texture_a": "light brown gravel path with scattered stones",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 99,
    "crop_height": 64,
    "refined_width": 198,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.5,
-    0.464
+    0.464,
+    0.5
    ],
    "crop_score": 1.039309,
    "source_box": [
@@ -18160,16 +18160,16 @@
    "crop_name": "training_ADE_train_00015077_t0_crop1",
    "source_image_id": "training_ADE_train_00015077",
    "source_transition": "training_ADE_train_00015077_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "light brown gravel path with scattered stones",
+   "texture_a": "light brown gravel path with scattered stones",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 144,
    "crop_height": 170,
    "refined_width": 288,
    "refined_height": 340,
    "scale_factor": 2,
    "balance": [
-    0.337,
-    0.627
+    0.627,
+    0.337
    ],
    "crop_score": 0.488204,
    "source_box": [
@@ -18556,16 +18556,16 @@
    "crop_name": "training_ADE_train_00015678_t0_crop0",
    "source_image_id": "training_ADE_train_00015678",
    "source_transition": "training_ADE_train_00015678_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "dark brown earth with sparse vegetation",
+   "texture_a": "dark brown earth with sparse vegetation",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 253,
    "crop_height": 197,
    "refined_width": 506,
    "refined_height": 394,
    "scale_factor": 2,
    "balance": [
-    0.65,
-    0.332
+    0.332,
+    0.65
    ],
    "crop_score": 0.574301,
    "source_box": [
@@ -18592,16 +18592,16 @@
    "crop_name": "training_ADE_train_00015864_t0_crop0",
    "source_image_id": "training_ADE_train_00015864",
    "source_transition": "training_ADE_train_00015864_t0",
-   "texture_a": "dark wet riverbed with smooth stones",
-   "texture_b": "dry yellowish grass with sparse blades",
+   "texture_a": "dry yellowish grass with sparse blades",
+   "texture_b": "dark wet riverbed with smooth stones",
    "crop_width": 256,
    "crop_height": 115,
    "refined_width": 512,
    "refined_height": 230,
    "scale_factor": 2,
    "balance": [
-    0.512,
-    0.439
+    0.439,
+    0.512
    ],
    "crop_score": 1.80577,
    "source_box": [
@@ -18664,16 +18664,16 @@
    "crop_name": "training_ADE_train_00015869_t1_crop0",
    "source_image_id": "training_ADE_train_00015869",
    "source_transition": "training_ADE_train_00015869_t1",
-   "texture_a": "foamy turbulent white water with spray",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "foamy turbulent white water with spray",
    "crop_width": 228,
    "crop_height": 65,
    "refined_width": 456,
    "refined_height": 130,
    "scale_factor": 2,
    "balance": [
-    0.488,
-    0.509
+    0.509,
+    0.488
    ],
    "crop_score": 1.312411,
    "source_box": [
@@ -18736,16 +18736,16 @@
    "crop_name": "training_ADE_train_00015874_t1_crop0",
    "source_image_id": "training_ADE_train_00015874",
    "source_transition": "training_ADE_train_00015874_t1",
-   "texture_a": "dense green foliage with broad leaves",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green foliage with broad leaves",
    "crop_width": 256,
    "crop_height": 84,
    "refined_width": 512,
    "refined_height": 168,
    "scale_factor": 2,
    "balance": [
-    0.474,
-    0.493
+    0.493,
+    0.474
    ],
    "crop_score": 0.208648,
    "source_box": [
@@ -19168,16 +19168,16 @@
    "crop_name": "training_ADE_train_00015898_t0_crop0",
    "source_image_id": "training_ADE_train_00015898",
    "source_transition": "training_ADE_train_00015898_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 256,
    "crop_height": 92,
    "refined_width": 512,
    "refined_height": 184,
    "scale_factor": 2,
    "balance": [
-    0.512,
-    0.471
+    0.471,
+    0.512
    ],
    "crop_score": 0.624888,
    "source_box": [
@@ -19240,16 +19240,16 @@
    "crop_name": "training_ADE_train_00015908_t1_crop0",
    "source_image_id": "training_ADE_train_00015908",
    "source_transition": "training_ADE_train_00015908_t1",
-   "texture_a": "smooth dark asphalt road surface with white lines",
-   "texture_b": "dry brown grassy hillside with sparse vegetation",
+   "texture_a": "dry brown grassy hillside with sparse vegetation",
+   "texture_b": "smooth dark asphalt road surface with white lines",
    "crop_width": 409,
    "crop_height": 261,
    "refined_width": 409,
    "refined_height": 261,
    "scale_factor": 1,
    "balance": [
-    0.47,
-    0.482
+    0.482,
+    0.47
    ],
    "crop_score": 0.935593,
    "source_box": [
@@ -19276,16 +19276,16 @@
    "crop_name": "training_ADE_train_00015908_t1_crop1",
    "source_image_id": "training_ADE_train_00015908",
    "source_transition": "training_ADE_train_00015908_t1",
-   "texture_a": "smooth dark asphalt road surface with white lines",
-   "texture_b": "dry brown grassy hillside with sparse vegetation",
+   "texture_a": "dry brown grassy hillside with sparse vegetation",
+   "texture_b": "smooth dark asphalt road surface with white lines",
    "crop_width": 68,
    "crop_height": 256,
    "refined_width": 136,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.586,
-    0.388
+    0.388,
+    0.586
    ],
    "crop_score": 0.338615,
    "source_box": [
@@ -19600,16 +19600,16 @@
    "crop_name": "training_ADE_train_00016156_t0_crop0",
    "source_image_id": "training_ADE_train_00016156",
    "source_transition": "training_ADE_train_00016156_t0",
-   "texture_a": "rough layered cliff face with vertical striations",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough layered cliff face with vertical striations",
    "crop_width": 256,
    "crop_height": 64,
    "refined_width": 512,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.49,
-    0.456
+    0.456,
+    0.49
    ],
    "crop_score": 3.190339,
    "source_box": [
@@ -19636,16 +19636,16 @@
    "crop_name": "training_ADE_train_00016162_t0_crop0",
    "source_image_id": "training_ADE_train_00016162",
    "source_transition": "training_ADE_train_00016162_t0",
-   "texture_a": "worn wooden planks with deep grain texture",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "worn wooden planks with deep grain texture",
    "crop_width": 305,
    "crop_height": 223,
    "refined_width": 305,
    "refined_height": 223,
    "scale_factor": 1,
    "balance": [
-    0.483,
-    0.47
+    0.47,
+    0.483
    ],
    "crop_score": 1.01714,
    "source_box": [
@@ -19672,16 +19672,16 @@
    "crop_name": "training_ADE_train_00016162_t0_crop1",
    "source_image_id": "training_ADE_train_00016162",
    "source_transition": "training_ADE_train_00016162_t0",
-   "texture_a": "worn wooden planks with deep grain texture",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "worn wooden planks with deep grain texture",
    "crop_width": 165,
    "crop_height": 120,
    "refined_width": 330,
    "refined_height": 240,
    "scale_factor": 2,
    "balance": [
-    0.282,
-    0.703
+    0.703,
+    0.282
    ],
    "crop_score": 0.654407,
    "source_box": [
@@ -20104,16 +20104,16 @@
    "crop_name": "training_ADE_train_00016705_t0_crop0",
    "source_image_id": "training_ADE_train_00016705",
    "source_transition": "training_ADE_train_00016705_t0",
-   "texture_a": "smooth white snow with subtle undulations",
-   "texture_b": "rough dark rock with jagged peaks",
+   "texture_a": "rough dark rock with jagged peaks",
+   "texture_b": "smooth white snow with subtle undulations",
    "crop_width": 616,
    "crop_height": 338,
    "refined_width": 616,
    "refined_height": 338,
    "scale_factor": 1,
    "balance": [
-    0.5,
-    0.471
+    0.471,
+    0.5
    ],
    "crop_score": 1.528792,
    "source_box": [
@@ -20140,16 +20140,16 @@
    "crop_name": "training_ADE_train_00016705_t0_crop1",
    "source_image_id": "training_ADE_train_00016705",
    "source_transition": "training_ADE_train_00016705_t0",
-   "texture_a": "smooth white snow with subtle undulations",
-   "texture_b": "rough dark rock with jagged peaks",
+   "texture_a": "rough dark rock with jagged peaks",
+   "texture_b": "smooth white snow with subtle undulations",
    "crop_width": 166,
    "crop_height": 256,
    "refined_width": 332,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.479,
-    0.495
+    0.495,
+    0.479
    ],
    "crop_score": 0.465447,
    "source_box": [
@@ -20176,16 +20176,16 @@
    "crop_name": "training_ADE_train_00016705_t0_crop2",
    "source_image_id": "training_ADE_train_00016705",
    "source_transition": "training_ADE_train_00016705_t0",
-   "texture_a": "smooth white snow with subtle undulations",
-   "texture_b": "rough dark rock with jagged peaks",
+   "texture_a": "rough dark rock with jagged peaks",
+   "texture_b": "smooth white snow with subtle undulations",
    "crop_width": 164,
    "crop_height": 256,
    "refined_width": 328,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.825,
-    0.155
+    0.155,
+    0.825
    ],
    "crop_score": 0.388816,
    "source_box": [
@@ -20320,16 +20320,16 @@
    "crop_name": "training_ADE_train_00016721_t0_crop0",
    "source_image_id": "training_ADE_train_00016721",
    "source_transition": "training_ADE_train_00016721_t0",
-   "texture_a": "wet sandy ground with ripples and mud",
-   "texture_b": "smooth concrete slope with white coating",
+   "texture_a": "smooth concrete slope with white coating",
+   "texture_b": "wet sandy ground with ripples and mud",
    "crop_width": 104,
    "crop_height": 118,
    "refined_width": 208,
    "refined_height": 236,
    "scale_factor": 2,
    "balance": [
-    0.419,
-    0.414
+    0.414,
+    0.419
    ],
    "crop_score": 1.573104,
    "source_box": [
@@ -20356,16 +20356,16 @@
    "crop_name": "training_ADE_train_00016721_t0_crop1",
    "source_image_id": "training_ADE_train_00016721",
    "source_transition": "training_ADE_train_00016721_t0",
-   "texture_a": "wet sandy ground with ripples and mud",
-   "texture_b": "smooth concrete slope with white coating",
+   "texture_a": "smooth concrete slope with white coating",
+   "texture_b": "wet sandy ground with ripples and mud",
    "crop_width": 256,
    "crop_height": 132,
    "refined_width": 512,
    "refined_height": 264,
    "scale_factor": 2,
    "balance": [
-    0.538,
-    0.423
+    0.423,
+    0.538
    ],
    "crop_score": 1.436538,
    "source_box": [
@@ -20428,16 +20428,16 @@
    "crop_name": "training_ADE_train_00016848_t0_crop0",
    "source_image_id": "training_ADE_train_00016848",
    "source_transition": "training_ADE_train_00016848_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 113,
    "crop_height": 225,
    "refined_width": 226,
    "refined_height": 450,
    "scale_factor": 2,
    "balance": [
-    0.597,
-    0.382
+    0.382,
+    0.597
    ],
    "crop_score": 1.314227,
    "source_box": [
@@ -20608,16 +20608,16 @@
    "crop_name": "training_ADE_train_00019008_t2_crop0",
    "source_image_id": "training_ADE_train_00019008",
    "source_transition": "training_ADE_train_00019008_t2",
-   "texture_a": "dense green foliage with broad leaves",
-   "texture_b": "rough textured bark with vertical ridges",
+   "texture_a": "rough textured bark with vertical ridges",
+   "texture_b": "dense green foliage with broad leaves",
    "crop_width": 81,
    "crop_height": 191,
    "refined_width": 162,
    "refined_height": 382,
    "scale_factor": 2,
    "balance": [
-    0.468,
-    0.53
+    0.53,
+    0.468
    ],
    "crop_score": 0.901354,
    "source_box": [
@@ -20644,16 +20644,16 @@
    "crop_name": "training_ADE_train_00019008_t2_crop1",
    "source_image_id": "training_ADE_train_00019008",
    "source_transition": "training_ADE_train_00019008_t2",
-   "texture_a": "dense green foliage with broad leaves",
-   "texture_b": "rough textured bark with vertical ridges",
+   "texture_a": "rough textured bark with vertical ridges",
+   "texture_b": "dense green foliage with broad leaves",
    "crop_width": 104,
    "crop_height": 64,
    "refined_width": 208,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.327,
-    0.65
+    0.65,
+    0.327
    ],
    "crop_score": 0.637888,
    "source_box": [
@@ -20824,16 +20824,16 @@
    "crop_name": "training_ADE_train_00019013_t0_crop0",
    "source_image_id": "training_ADE_train_00019013",
    "source_transition": "training_ADE_train_00019013_t0",
-   "texture_a": "rough mossy rock with green vegetation",
-   "texture_b": "smooth clear water with visible ripples",
+   "texture_a": "smooth clear water with visible ripples",
+   "texture_b": "rough mossy rock with green vegetation",
    "crop_width": 256,
    "crop_height": 123,
    "refined_width": 512,
    "refined_height": 246,
    "scale_factor": 2,
    "balance": [
-    0.307,
-    0.692
+    0.692,
+    0.307
    ],
    "crop_score": 1.240437,
    "source_box": [
@@ -20860,16 +20860,16 @@
    "crop_name": "training_ADE_train_00019013_t0_crop1",
    "source_image_id": "training_ADE_train_00019013",
    "source_transition": "training_ADE_train_00019013_t0",
-   "texture_a": "rough mossy rock with green vegetation",
-   "texture_b": "smooth clear water with visible ripples",
+   "texture_a": "smooth clear water with visible ripples",
+   "texture_b": "rough mossy rock with green vegetation",
    "crop_width": 289,
    "crop_height": 212,
    "refined_width": 289,
    "refined_height": 212,
    "scale_factor": 1,
    "balance": [
-    0.294,
-    0.688
+    0.688,
+    0.294
    ],
    "crop_score": 0.367929,
    "source_box": [
@@ -20896,16 +20896,16 @@
    "crop_name": "training_ADE_train_00019013_t0_crop2",
    "source_image_id": "training_ADE_train_00019013",
    "source_transition": "training_ADE_train_00019013_t0",
-   "texture_a": "rough mossy rock with green vegetation",
-   "texture_b": "smooth clear water with visible ripples",
+   "texture_a": "smooth clear water with visible ripples",
+   "texture_b": "rough mossy rock with green vegetation",
    "crop_width": 288,
    "crop_height": 484,
    "refined_width": 288,
    "refined_height": 484,
    "scale_factor": 1,
    "balance": [
-    0.639,
-    0.321
+    0.321,
+    0.639
    ],
    "crop_score": 0.181864,
    "source_box": [
@@ -20932,16 +20932,16 @@
    "crop_name": "training_ADE_train_00019013_t1_crop0",
    "source_image_id": "training_ADE_train_00019013",
    "source_transition": "training_ADE_train_00019013_t1",
-   "texture_a": "rough mossy rock with green vegetation",
-   "texture_b": "wet sandy riverbed with scattered pebbles",
+   "texture_a": "wet sandy riverbed with scattered pebbles",
+   "texture_b": "rough mossy rock with green vegetation",
    "crop_width": 209,
    "crop_height": 257,
    "refined_width": 209,
    "refined_height": 257,
    "scale_factor": 1,
    "balance": [
-    0.741,
-    0.243
+    0.243,
+    0.741
    ],
    "crop_score": 0.589572,
    "source_box": [
@@ -20968,16 +20968,16 @@
    "crop_name": "training_ADE_train_00019013_t1_crop1",
    "source_image_id": "training_ADE_train_00019013",
    "source_transition": "training_ADE_train_00019013_t1",
-   "texture_a": "rough mossy rock with green vegetation",
-   "texture_b": "wet sandy riverbed with scattered pebbles",
+   "texture_a": "wet sandy riverbed with scattered pebbles",
+   "texture_b": "rough mossy rock with green vegetation",
    "crop_width": 128,
    "crop_height": 256,
    "refined_width": 256,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.292,
-    0.692
+    0.692,
+    0.292
    ],
    "crop_score": 0.356473,
    "source_box": [
@@ -21004,16 +21004,16 @@
    "crop_name": "training_ADE_train_00019013_t1_crop2",
    "source_image_id": "training_ADE_train_00019013",
    "source_transition": "training_ADE_train_00019013_t1",
-   "texture_a": "rough mossy rock with green vegetation",
-   "texture_b": "wet sandy riverbed with scattered pebbles",
+   "texture_a": "wet sandy riverbed with scattered pebbles",
+   "texture_b": "rough mossy rock with green vegetation",
    "crop_width": 683,
    "crop_height": 228,
    "refined_width": 683,
    "refined_height": 228,
    "scale_factor": 1,
    "balance": [
-    0.614,
-    0.348
+    0.348,
+    0.614
    ],
    "crop_score": 0.147698,
    "source_box": [
@@ -21256,16 +21256,16 @@
    "crop_name": "training_ADE_train_00019229_t0_crop0",
    "source_image_id": "training_ADE_train_00019229",
    "source_transition": "training_ADE_train_00019229_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "gravel path with small stones and dust",
+   "texture_a": "gravel path with small stones and dust",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 255,
    "crop_height": 89,
    "refined_width": 510,
    "refined_height": 178,
    "scale_factor": 2,
    "balance": [
-    0.405,
-    0.551
+    0.551,
+    0.405
    ],
    "crop_score": 1.56503,
    "source_box": [
@@ -21508,16 +21508,16 @@
    "crop_name": "training_ADE_train_00019438_t0_crop0",
    "source_image_id": "training_ADE_train_00019438",
    "source_transition": "training_ADE_train_00019438_t0",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 164,
    "crop_height": 116,
    "refined_width": 328,
    "refined_height": 232,
    "scale_factor": 2,
    "balance": [
-    0.479,
-    0.496
+    0.496,
+    0.479
    ],
    "crop_score": 0.355347,
    "source_box": [
@@ -21796,16 +21796,16 @@
    "crop_name": "training_ADE_train_00019815_t0_crop0",
    "source_image_id": "training_ADE_train_00019815",
    "source_transition": "training_ADE_train_00019815_t0",
-   "texture_a": "wet dark rock with mossy patches",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "wet dark rock with mossy patches",
    "crop_width": 64,
    "crop_height": 105,
    "refined_width": 128,
    "refined_height": 210,
    "scale_factor": 2,
    "balance": [
-    0.42,
-    0.376
+    0.376,
+    0.42
    ],
    "crop_score": 1.122793,
    "source_box": [
@@ -21832,16 +21832,16 @@
    "crop_name": "training_ADE_train_00019815_t1_crop0",
    "source_image_id": "training_ADE_train_00019815",
    "source_transition": "training_ADE_train_00019815_t1",
-   "texture_a": "wet dark rock with mossy patches",
-   "texture_b": "foamy white water with spray",
+   "texture_a": "foamy white water with spray",
+   "texture_b": "wet dark rock with mossy patches",
    "crop_width": 68,
    "crop_height": 167,
    "refined_width": 136,
    "refined_height": 334,
    "scale_factor": 2,
    "balance": [
-    0.527,
-    0.435
+    0.435,
+    0.527
    ],
    "crop_score": 0.417449,
    "source_box": [
@@ -21904,16 +21904,16 @@
    "crop_name": "training_ADE_train_00019819_t2_crop0",
    "source_image_id": "training_ADE_train_00019819",
    "source_transition": "training_ADE_train_00019819_t2",
-   "texture_a": "damp brownish rock with algae",
-   "texture_b": "foamy white water spray with mist",
+   "texture_a": "foamy white water spray with mist",
+   "texture_b": "damp brownish rock with algae",
    "crop_width": 144,
    "crop_height": 140,
    "refined_width": 288,
    "refined_height": 280,
    "scale_factor": 2,
    "balance": [
-    0.626,
-    0.364
+    0.364,
+    0.626
    ],
    "crop_score": 0.384531,
    "source_box": [
@@ -22264,16 +22264,16 @@
    "crop_name": "training_ADE_train_00019855_t1_crop0",
    "source_image_id": "training_ADE_train_00019855",
    "source_transition": "training_ADE_train_00019855_t1",
-   "texture_a": "wet rough rock face with moss patches",
-   "texture_b": "smooth flowing water with white foam",
+   "texture_a": "smooth flowing water with white foam",
+   "texture_b": "wet rough rock face with moss patches",
    "crop_width": 166,
    "crop_height": 149,
    "refined_width": 332,
    "refined_height": 298,
    "scale_factor": 2,
    "balance": [
-    0.578,
-    0.391
+    0.391,
+    0.578
    ],
    "crop_score": 0.535732,
    "source_box": [
@@ -22300,16 +22300,16 @@
    "crop_name": "training_ADE_train_00019855_t2_crop0",
    "source_image_id": "training_ADE_train_00019855",
    "source_transition": "training_ADE_train_00019855_t2",
-   "texture_a": "smooth flowing water with white foam",
-   "texture_b": "dark wet rock at base with algae",
+   "texture_a": "dark wet rock at base with algae",
+   "texture_b": "smooth flowing water with white foam",
    "crop_width": 97,
    "crop_height": 78,
    "refined_width": 194,
    "refined_height": 156,
    "scale_factor": 2,
    "balance": [
-    0.348,
-    0.615
+    0.615,
+    0.348
    ],
    "crop_score": 1.03449,
    "source_box": [
@@ -22336,16 +22336,16 @@
    "crop_name": "training_ADE_train_00019856_t0_crop0",
    "source_image_id": "training_ADE_train_00019856",
    "source_transition": "training_ADE_train_00019856_t0",
-   "texture_a": "rough gray rock with moss patches",
-   "texture_b": "white foamy water cascading down",
+   "texture_a": "white foamy water cascading down",
+   "texture_b": "rough gray rock with moss patches",
    "crop_width": 256,
    "crop_height": 174,
    "refined_width": 512,
    "refined_height": 348,
    "scale_factor": 2,
    "balance": [
-    0.743,
-    0.236
+    0.236,
+    0.743
    ],
    "crop_score": 0.796645,
    "source_box": [
@@ -22804,16 +22804,16 @@
    "crop_name": "training_ADE_train_00019882_t0_crop0",
    "source_image_id": "training_ADE_train_00019882",
    "source_transition": "training_ADE_train_00019882_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 111,
    "crop_height": 64,
    "refined_width": 222,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.471,
-    0.491
+    0.491,
+    0.471
    ],
    "crop_score": 1.143555,
    "source_box": [
@@ -22840,16 +22840,16 @@
    "crop_name": "training_ADE_train_00019882_t0_crop1",
    "source_image_id": "training_ADE_train_00019882",
    "source_transition": "training_ADE_train_00019882_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 137,
    "crop_height": 84,
    "refined_width": 274,
    "refined_height": 168,
    "scale_factor": 2,
    "balance": [
-    0.403,
-    0.593
+    0.593,
+    0.403
    ],
    "crop_score": 0.712981,
    "source_box": [
@@ -23344,16 +23344,16 @@
    "crop_name": "validation_ADE_val_00000625_t1_crop0",
    "source_image_id": "validation_ADE_val_00000625",
    "source_transition": "validation_ADE_val_00000625_t1",
-   "texture_a": "lush green foliage with varied leaf shapes",
-   "texture_b": "wet brown muddy water with floating plants",
+   "texture_a": "wet brown muddy water with floating plants",
+   "texture_b": "lush green foliage with varied leaf shapes",
    "crop_width": 157,
    "crop_height": 124,
    "refined_width": 314,
    "refined_height": 248,
    "scale_factor": 2,
    "balance": [
-    0.468,
-    0.488
+    0.488,
+    0.468
    ],
    "crop_score": 0.756824,
    "source_box": [
@@ -23380,16 +23380,16 @@
    "crop_name": "validation_ADE_val_00000625_t1_crop1",
    "source_image_id": "validation_ADE_val_00000625",
    "source_transition": "validation_ADE_val_00000625_t1",
-   "texture_a": "lush green foliage with varied leaf shapes",
-   "texture_b": "wet brown muddy water with floating plants",
+   "texture_a": "wet brown muddy water with floating plants",
+   "texture_b": "lush green foliage with varied leaf shapes",
    "crop_width": 256,
    "crop_height": 80,
    "refined_width": 512,
    "refined_height": 160,
    "scale_factor": 2,
    "balance": [
-    0.457,
-    0.527
+    0.527,
+    0.457
    ],
    "crop_score": 0.467279,
    "source_box": [
@@ -23416,16 +23416,16 @@
    "crop_name": "validation_ADE_val_00000625_t1_crop2",
    "source_image_id": "validation_ADE_val_00000625",
    "source_transition": "validation_ADE_val_00000625_t1",
-   "texture_a": "lush green foliage with varied leaf shapes",
-   "texture_b": "wet brown muddy water with floating plants",
+   "texture_a": "wet brown muddy water with floating plants",
+   "texture_b": "lush green foliage with varied leaf shapes",
    "crop_width": 132,
    "crop_height": 144,
    "refined_width": 264,
    "refined_height": 288,
    "scale_factor": 2,
    "balance": [
-    0.286,
-    0.698
+    0.698,
+    0.286
    ],
    "crop_score": 0.3094,
    "source_box": [
@@ -23452,16 +23452,16 @@
    "crop_name": "validation_ADE_val_00000733_t0_crop0",
    "source_image_id": "validation_ADE_val_00000733",
    "source_transition": "validation_ADE_val_00000733_t0",
-   "texture_a": "rough textured sandstone with layered striations",
-   "texture_b": "dense green shrubbery with needle-like leaves",
+   "texture_a": "dense green shrubbery with needle-like leaves",
+   "texture_b": "rough textured sandstone with layered striations",
    "crop_width": 566,
    "crop_height": 291,
    "refined_width": 566,
    "refined_height": 291,
    "scale_factor": 1,
    "balance": [
-    0.236,
-    0.73
+    0.73,
+    0.236
    ],
    "crop_score": 0.504515,
    "source_box": [
@@ -23488,16 +23488,16 @@
    "crop_name": "validation_ADE_val_00000733_t0_crop1",
    "source_image_id": "validation_ADE_val_00000733",
    "source_transition": "validation_ADE_val_00000733_t0",
-   "texture_a": "rough textured sandstone with layered striations",
-   "texture_b": "dense green shrubbery with needle-like leaves",
+   "texture_a": "dense green shrubbery with needle-like leaves",
+   "texture_b": "rough textured sandstone with layered striations",
    "crop_width": 104,
    "crop_height": 256,
    "refined_width": 208,
    "refined_height": 512,
    "scale_factor": 2,
    "balance": [
-    0.1,
-    0.874
+    0.874,
+    0.1
    ],
    "crop_score": 0.472733,
    "source_box": [
@@ -23704,16 +23704,16 @@
    "crop_name": "validation_ADE_val_00000980_t0_crop0",
    "source_image_id": "validation_ADE_val_00000980",
    "source_transition": "validation_ADE_val_00000980_t0",
-   "texture_a": "wet sandy beach with small ripples",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "wet sandy beach with small ripples",
    "crop_width": 256,
    "crop_height": 131,
    "refined_width": 512,
    "refined_height": 262,
    "scale_factor": 2,
    "balance": [
-    0.537,
-    0.439
+    0.439,
+    0.537
    ],
    "crop_score": 2.870268,
    "source_box": [
@@ -23740,16 +23740,16 @@
    "crop_name": "validation_ADE_val_00000980_t1_crop0",
    "source_image_id": "validation_ADE_val_00000980",
    "source_transition": "validation_ADE_val_00000980_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 213,
    "crop_height": 187,
    "refined_width": 426,
    "refined_height": 374,
    "scale_factor": 2,
    "balance": [
-    0.309,
-    0.683
+    0.683,
+    0.309
    ],
    "crop_score": 2.562846,
    "source_box": [
@@ -23776,16 +23776,16 @@
    "crop_name": "validation_ADE_val_00000980_t1_crop1",
    "source_image_id": "validation_ADE_val_00000980",
    "source_transition": "validation_ADE_val_00000980_t1",
-   "texture_a": "dense green grass with scattered shadows",
-   "texture_b": "rough weathered stone with visible cracks",
+   "texture_a": "rough weathered stone with visible cracks",
+   "texture_b": "dense green grass with scattered shadows",
    "crop_width": 64,
    "crop_height": 192,
    "refined_width": 128,
    "refined_height": 384,
    "scale_factor": 2,
    "balance": [
-    0.31,
-    0.67
+    0.67,
+    0.31
    ],
    "crop_score": 1.116162,
    "source_box": [
@@ -23884,16 +23884,16 @@
    "crop_name": "validation_ADE_val_00001193_t2_crop0",
    "source_image_id": "validation_ADE_val_00001193",
    "source_transition": "validation_ADE_val_00001193_t2",
-   "texture_a": "green grass with dappled sunlight",
-   "texture_b": "light beige ground with sparse vegetation",
+   "texture_a": "light beige ground with sparse vegetation",
+   "texture_b": "green grass with dappled sunlight",
    "crop_width": 256,
    "crop_height": 142,
    "refined_width": 512,
    "refined_height": 284,
    "scale_factor": 2,
    "balance": [
-    0.552,
-    0.403
+    0.403,
+    0.552
    ],
    "crop_score": 1.112517,
    "source_box": [
@@ -23920,16 +23920,16 @@
    "crop_name": "validation_ADE_val_00001193_t2_crop1",
    "source_image_id": "validation_ADE_val_00001193",
    "source_transition": "validation_ADE_val_00001193_t2",
-   "texture_a": "green grass with dappled sunlight",
-   "texture_b": "light beige ground with sparse vegetation",
+   "texture_a": "light beige ground with sparse vegetation",
+   "texture_b": "green grass with dappled sunlight",
    "crop_width": 256,
    "crop_height": 184,
    "refined_width": 512,
    "refined_height": 368,
    "scale_factor": 2,
    "balance": [
-    0.603,
-    0.352
+    0.352,
+    0.603
    ],
    "crop_score": 0.44821,
    "source_box": [
@@ -23956,16 +23956,16 @@
    "crop_name": "validation_ADE_val_00001193_t2_crop2",
    "source_image_id": "validation_ADE_val_00001193",
    "source_transition": "validation_ADE_val_00001193_t2",
-   "texture_a": "green grass with dappled sunlight",
-   "texture_b": "light beige ground with sparse vegetation",
+   "texture_a": "light beige ground with sparse vegetation",
+   "texture_b": "green grass with dappled sunlight",
    "crop_width": 104,
    "crop_height": 173,
    "refined_width": 208,
    "refined_height": 346,
    "scale_factor": 2,
    "balance": [
-    0.615,
-    0.38
+    0.38,
+    0.615
    ],
    "crop_score": 0.303635,
    "source_box": [
@@ -24028,16 +24028,16 @@
    "crop_name": "validation_ADE_val_00001289_t0_crop0",
    "source_image_id": "validation_ADE_val_00001289",
    "source_transition": "validation_ADE_val_00001289_t0",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "rough dark wet stone with moss patches",
+   "texture_a": "rough dark wet stone with moss patches",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 138,
    "crop_height": 76,
    "refined_width": 276,
    "refined_height": 152,
    "scale_factor": 2,
    "balance": [
-    0.681,
-    0.304
+    0.304,
+    0.681
    ],
    "crop_score": 0.472457,
    "source_box": [
@@ -24100,16 +24100,16 @@
    "crop_name": "validation_ADE_val_00001326_t0_crop0",
    "source_image_id": "validation_ADE_val_00001326",
    "source_transition": "validation_ADE_val_00001326_t0",
-   "texture_a": "rough gray stone with visible cracks",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "rough gray stone with visible cracks",
    "crop_width": 167,
    "crop_height": 192,
    "refined_width": 334,
    "refined_height": 384,
    "scale_factor": 2,
    "balance": [
-    0.774,
-    0.198
+    0.198,
+    0.774
    ],
    "crop_score": 0.251936,
    "source_box": [
@@ -24244,16 +24244,16 @@
    "crop_name": "validation_ADE_val_00001490_t0_crop0",
    "source_image_id": "validation_ADE_val_00001490",
    "source_transition": "validation_ADE_val_00001490_t0",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 256,
    "crop_height": 101,
    "refined_width": 512,
    "refined_height": 202,
    "scale_factor": 2,
    "balance": [
-    0.38,
-    0.489
+    0.489,
+    0.38
    ],
    "crop_score": 2.002194,
    "source_box": [
@@ -24280,16 +24280,16 @@
    "crop_name": "validation_ADE_val_00001490_t0_crop1",
    "source_image_id": "validation_ADE_val_00001490",
    "source_transition": "validation_ADE_val_00001490_t0",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 121,
    "crop_height": 64,
    "refined_width": 242,
    "refined_height": 128,
    "scale_factor": 2,
    "balance": [
-    0.453,
-    0.46
+    0.46,
+    0.453
    ],
    "crop_score": 1.317178,
    "source_box": [
@@ -24316,16 +24316,16 @@
    "crop_name": "validation_ADE_val_00001490_t0_crop2",
    "source_image_id": "validation_ADE_val_00001490",
    "source_transition": "validation_ADE_val_00001490_t0",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 82,
    "crop_height": 154,
    "refined_width": 164,
    "refined_height": 308,
    "scale_factor": 2,
    "balance": [
-    0.234,
-    0.746
+    0.746,
+    0.234
    ],
    "crop_score": 0.878409,
    "source_box": [
@@ -24352,16 +24352,16 @@
    "crop_name": "validation_ADE_val_00001490_t0_crop3",
    "source_image_id": "validation_ADE_val_00001490",
    "source_transition": "validation_ADE_val_00001490_t0",
-   "texture_a": "rough weathered stone with visible cracks",
-   "texture_b": "smooth wet sandy ground with ripples",
+   "texture_a": "smooth wet sandy ground with ripples",
+   "texture_b": "rough weathered stone with visible cracks",
    "crop_width": 256,
    "crop_height": 104,
    "refined_width": 512,
    "refined_height": 208,
    "scale_factor": 2,
    "balance": [
-    0.2,
-    0.771
+    0.771,
+    0.2
    ],
    "crop_score": 0.525267,
    "source_box": [
@@ -24388,16 +24388,16 @@
    "crop_name": "validation_ADE_val_00001490_t1_crop0",
    "source_image_id": "validation_ADE_val_00001490",
    "source_transition": "validation_ADE_val_00001490_t1",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "dense green foliage with scattered shadows",
+   "texture_a": "dense green foliage with scattered shadows",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 164,
    "crop_height": 98,
    "refined_width": 328,
    "refined_height": 196,
    "scale_factor": 2,
    "balance": [
-    0.7,
-    0.3
+    0.3,
+    0.7
    ],
    "crop_score": 1.272533,
    "source_box": [
@@ -24424,16 +24424,16 @@
    "crop_name": "validation_ADE_val_00001490_t1_crop1",
    "source_image_id": "validation_ADE_val_00001490",
    "source_transition": "validation_ADE_val_00001490_t1",
-   "texture_a": "smooth wet sandy ground with ripples",
-   "texture_b": "dense green foliage with scattered shadows",
+   "texture_a": "dense green foliage with scattered shadows",
+   "texture_b": "smooth wet sandy ground with ripples",
    "crop_width": 661,
    "crop_height": 215,
    "refined_width": 661,
    "refined_height": 215,
    "scale_factor": 1,
    "balance": [
-    0.715,
-    0.237
+    0.237,
+    0.715
    ],
    "crop_score": 1.244866,
    "source_box": [
@@ -24676,16 +24676,16 @@
    "crop_name": "validation_ADE_val_00001686_t2_crop0",
    "source_image_id": "validation_ADE_val_00001686",
    "source_transition": "validation_ADE_val_00001686_t2",
-   "texture_a": "muddy wet ground with sparse vegetation",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "muddy wet ground with sparse vegetation",
    "crop_width": 417,
    "crop_height": 227,
    "refined_width": 417,
    "refined_height": 227,
    "scale_factor": 1,
    "balance": [
-    0.486,
-    0.484
+    0.484,
+    0.486
    ],
    "crop_score": 1.031625,
    "source_box": [
@@ -24748,16 +24748,16 @@
    "crop_name": "validation_ADE_val_00001899_t2_crop0",
    "source_image_id": "validation_ADE_val_00001899",
    "source_transition": "validation_ADE_val_00001899_t2",
-   "texture_a": "brownish earth with sparse vegetation",
-   "texture_b": "smooth blue water with gentle ripples",
+   "texture_a": "dark reddish-brown soil with rough texture",
+   "texture_b": "brownish earth with sparse vegetation",
    "crop_width": 256,
    "crop_height": 65,
    "refined_width": 512,
    "refined_height": 130,
    "scale_factor": 2,
    "balance": [
-    0.537,
-    0.442
+    0.442,
+    0.537
    ],
    "crop_score": 2.33327,
    "source_box": [
@@ -24892,16 +24892,16 @@
    "crop_name": "validation_ADE_val_00001986_t2_crop0",
    "source_image_id": "validation_ADE_val_00001986",
    "source_transition": "validation_ADE_val_00001986_t2",
-   "texture_a": "brown dirt path with scattered leaves",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "brown dirt path with scattered leaves",
    "crop_width": 427,
    "crop_height": 259,
    "refined_width": 427,
    "refined_height": 259,
    "scale_factor": 1,
    "balance": [
-    0.253,
-    0.718
+    0.718,
+    0.253
    ],
    "crop_score": 0.477158,
    "source_box": [
@@ -24928,16 +24928,16 @@
    "crop_name": "validation_ADE_val_00001986_t2_crop1",
    "source_image_id": "validation_ADE_val_00001986",
    "source_transition": "validation_ADE_val_00001986_t2",
-   "texture_a": "brown dirt path with scattered leaves",
-   "texture_b": "dense green grass with scattered shadows",
+   "texture_a": "dense green grass with scattered shadows",
+   "texture_b": "brown dirt path with scattered leaves",
    "crop_width": 256,
    "crop_height": 80,
    "refined_width": 512,
    "refined_height": 160,
    "scale_factor": 2,
    "balance": [
-    0.501,
-    0.459
+    0.459,
+    0.501
    ],
    "crop_score": 0.277745,
    "source_box": [
